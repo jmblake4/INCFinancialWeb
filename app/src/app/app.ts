@@ -5,8 +5,7 @@ import portfolioViewControl from '../viewcontrols/portfolio/portfolio.vc';
 import connectViewControl from '../viewcontrols/connect/connect.vc';
 import resourcesViewControl from '../viewcontrols/resources/resources.vc';
 import homeTwoViewControl from '../viewcontrols/homeTwo/homeTwo.vc';
-
-
+import LearnMoreViewControl from '../viewcontrols/learnmore/learnmore.vc';
 
 export default class MyApp extends App {
     constructor(router: routing.Router) {
@@ -18,7 +17,8 @@ export default class MyApp extends App {
             { pattern: 'portfolio', view: portfolioViewControl },
             { pattern: 'connect', view: connectViewControl },
             { pattern: 'resources', view: resourcesViewControl },
-            { pattern: 'hometwo', view: homeTwoViewControl }
+            { pattern: 'hometwo', view: homeTwoViewControl },
+            { pattern: 'learnmore', view: LearnMoreViewControl }			
             
             
         ]);
