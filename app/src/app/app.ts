@@ -6,7 +6,12 @@ export default class MyApp extends App {
         super();
 
         router.configure([
-            { pattern: '', view: HomeViewControl }
+            { pattern: '', view: HomeViewControl },
+            { pattern: 'about', view: aboutViewControl },
+            { pattern: 'portfolio', view: portfolioViewControl },
+            { pattern: 'connect', view: connectViewControl }
+            
+            
         ]);
     }
 
