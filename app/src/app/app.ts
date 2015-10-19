@@ -1,5 +1,12 @@
 import {App, events, register, routing} from 'platypus';
 import HomeViewControl from '../viewcontrols/home/home.vc';
+import aboutViewControl from '../viewcontrols/about/about.vc';
+import portfolioViewControl from '../viewcontrols/portfolio/portfolio.vc';
+import connectViewControl from '../viewcontrols/connect/connect.vc';
+import resourcesViewControl from '../viewcontrols/resources/resources.vc';
+import homeTwoViewControl from '../viewcontrols/homeTwo/homeTwo.vc';
+
+
 
 export default class MyApp extends App {
     constructor(router: routing.Router) {
@@ -11,7 +18,7 @@ export default class MyApp extends App {
             { pattern: 'portfolio', view: portfolioViewControl },
             { pattern: 'connect', view: connectViewControl },
             { pattern: 'resources', view: resourcesViewControl },
-            { pattern: 'hometwo', view: hometwoViewControl }
+            { pattern: 'hometwo', view: homeTwoViewControl }
             
             
         ]);
