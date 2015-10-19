@@ -9,7 +9,9 @@ export default class MyApp extends App {
             { pattern: '', view: HomeViewControl },
             { pattern: 'about', view: aboutViewControl },
             { pattern: 'portfolio', view: portfolioViewControl },
-            { pattern: 'connect', view: connectViewControl }
+            { pattern: 'connect', view: connectViewControl },
+            { pattern: 'resources', view: resourcesViewControl },
+            { pattern: 'hometwo', view: hometwoViewControl }
             
             
         ]);
