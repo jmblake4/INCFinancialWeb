@@ -1,17 +1,9 @@
-// import {register, ui} from 'platypus';
-
-// export default class NavbarTemplateControl extends ui.TemplateControl {
-//     templateString: string = require('./navbar.tc.html');
-// }
-
-// register.control('navbar', NavbarTemplateControl);
-
 import {controls, events, register, ui, web} from 'platypus';
 import {DrawerController} from 'platypusui';
 
 export default class NavbarTemplateControl extends ui.TemplateControl {
     templateString: string = require('./navbar.tc.html');
-	
+
 	drawerController: controls.INamedElement<HTMLDivElement, DrawerController>;
 	
 	context: any = {
@@ -29,7 +21,6 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
 			// }
 		});
 	}
-
 }
 
 register.control('navbar', NavbarTemplateControl);
