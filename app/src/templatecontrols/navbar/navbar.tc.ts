@@ -2,11 +2,7 @@ import {controls, events, register, ui, web} from 'platypus';
 import {DrawerController} from 'platypusui';
 
 export default class NavbarTemplateControl extends ui.TemplateControl {
-<<<<<<< HEAD
-    templateString: string = require('./navbar.tc.html');
-=======
    templateString: string = require('./navbar.tc.html');
->>>>>>> 4347cece1b4f84605504fc981398aa015e7722e8
 }
 
 register.control('navbar', NavbarTemplateControl);
