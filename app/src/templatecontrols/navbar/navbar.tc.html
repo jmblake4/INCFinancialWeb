@@ -1,27 +1,23 @@
-<div class="navbar" plat-visible="{{showNavbar}}">
-    <div class="navbar-center">
-		<div id='INCLogoDiv' class='row'>
-			<img src="../images/icons/INC Financial LogoFinal.svg">
-		</div>
-		<span>
-			<a href="">Home</a>
-		</span>
-		<span>
-			<a href="/#!/resources">Resources</a>
-		</span>
-		<span>
-			<a href="/#!/portfolio">Portfolio</a>
-		</span>
-		<span>
-			<a href="/#!/about">About</a>
-		</span>
-		<span>
-			<a href="/#!/learnmore">Connect</a>
-		</span>
+<div class="navbar">
+   <plat-drawer-controller plat-name="drawerController">
+           <!--<span class="navbar-icon">|||</span>-->
+   </plat-drawer-controller>
+
+    <div class="container">
+        <div class="item">
+            <plat-link plat-options="{view: '', isUrl: true}"><span class="home">HOME</span></plat-link>
+        </div>
+        <!--<div class="item">
+            <plat-link plat-options="{view: '/resources', isUrl: true}"><span class="resources">RESOURCES</span></plat-link>
+        </div>        -->
+        <div class="item">
+            <plat-link plat-options="{view: '/about', isUrl: true}"><span class="about">ABOUT</span></plat-link>
+        </div>
+        <div class="item">
+            <plat-link plat-options="{view: '/portfolio', isUrl: true}"><span class="portfolio">PORTFOLIO</span></plat-link>
+        </div>
+        <div class="item">
+            <plat-link plat-options="{view: '/connect', isUrl: true}"><span class="connect">CONNECT</span></plat-link>
+        </div>    
     </div>
-    <!--<div class="navbar-right">
-        <plat-drawer-controller plat-name="drawerController">
-            <span class="navbar-icon"></span>
-        </plat-drawer-controller>
-    </div>-->
 </div>
