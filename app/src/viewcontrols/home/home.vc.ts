@@ -10,34 +10,10 @@ export default class HomeViewControl extends BaseViewControl {
 
     context: any = {
 		detailsVisible: <boolean> false,
-		createDetailsVisible: <boolean> false,
-		growDetailsVisible: <boolean> false,
-		keepDetailsVisible: <boolean> false,
-		normalVisible: <boolean> true
 	};
-
-	showCreateDetails(): any {
-		this.context.detailsVisible = true;
-	}
 	
-	showGrowDetails(): any {
-		this.context.detailsVisible = true;
-	}
-	
-	showKeepDetails(): any {
-		this.context.detailsVisible = true;
-	}
-	
-	hideCreateDetails(): any {
-		this.context.detailsVisible = false;
-	}
-	
-	hideGrowDetails(): any {
-		this.context.detailsVisible = false;
-	}
-	
-	hideKeepDetails(): any {
-		this.context.detailsVisible = false;
+	toggleDetails(): any {
+		this.context.detailsVisible = this.context.detailsVisible ? false : true;
 	}
 }
 register.viewControl('home-vc', HomeViewControl);
