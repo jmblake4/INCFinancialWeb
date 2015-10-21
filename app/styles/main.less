@@ -19,10 +19,19 @@
 	src: url('../fonts/Gotham-MediumItalic.woff');
 }
 
+.app {
+	padding-top: 150px;
+}
+
 body {
 	background-image: url('../images/INCBackgound.jpg');
 	background-size: 100% 300%;
+	// top: 100px;
 	// overflow: hidden;
+}
+
+html {
+	padding-top: 100px;
 }
 
 #INCLogoDiv {
@@ -44,7 +53,6 @@ body {
 
 @import '../../node_modules/platypusui/dist/platypus';
 
-@import '../src/templatecontrols/footer/footer.tc.less';
 @import '../src/templatecontrols/navbar/navbar.tc.less';
 
 @import '../src/viewcontrols/about/about.vc.less';
