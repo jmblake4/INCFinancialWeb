@@ -17,32 +17,26 @@ export default class HomeViewControl extends BaseViewControl {
 	};
 
 	showCreateDetails(): any {
-		alert("you clicked on show create details");
 		this.context.detailsVisible = true;
 	}
 	
 	showGrowDetails(): any {
-		alert("you clicked on show grow details");
 		this.context.detailsVisible = true;
 	}
 	
 	showKeepDetails(): any {
-		alert("you clicked on show keep details");
 		this.context.detailsVisible = true;
 	}
 	
 	hideCreateDetails(): any {
-		alert("you clicked on hide create details");
 		this.context.detailsVisible = false;
 	}
 	
 	hideGrowDetails(): any {
-		alert("you clicked on hide grow details");
 		this.context.detailsVisible = false;
 	}
 	
 	hideKeepDetails(): any {
-		alert("you clicked on hide keep details");
 		this.context.detailsVisible = false;
 	}
 }
