@@ -14,30 +14,29 @@ export default class HomeViewControl extends BaseViewControl {
 		keepDetailsVisible: <boolean> false,
 		normalVisible: <boolean> true
 	};
-}
 
-var showCreateDetails = function() {
-	alert("you clicked on show create details");
+	showCreateDetails(): any {
+		alert("you clicked on show create details");
+	}
+	
+	showGrowDetails(): any {
+		alert("you clicked on show create details");
+	}
+	
+	showKeepDetails(): any {
+		alert("you clicked on show create details");
+	}
+	
+	hideCreateDetails(): any {
+		alert("you clicked on show create details");
+	}
+	
+	hideGrowDetails(): any {
+		alert("you clicked on show create details");
+	}
+	
+	hideKeepDetails(): any {
+		alert("you clicked on show create details");
+	}
 }
-
-var showGrowDetails = function() {
-	alert("you clicked on show grow details");
-}
-
-var showKeepDetails = function() {
-	alert("you clicked on show keep details");
-}
-
-var hideCreateDetails = function() {
-	alert("you clicked on hide create details");
-}
-
-var hideGrowDetails = function() {
-	alert("you clicked on hide grow details");
-}
-
-var hideKeepDetails = function() {
-	alert("you clicked on hide keep details");
-}
-
 register.viewControl('home-vc', HomeViewControl);
