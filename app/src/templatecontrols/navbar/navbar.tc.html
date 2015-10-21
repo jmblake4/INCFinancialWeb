@@ -2,22 +2,25 @@
     <plat-drawer-controller plat-name="drawerController">
             <!--<span class="navbar-icon">|||</span>-->
     </plat-drawer-controller>
-        <div id='INCLogoDiv'>
-			<span><img src="../images/icons/INC Financial LogoFinal.svg"></span>
-		</div>
+	<!--<div id='INCLogo'>
+		<span><img src="../images/icons/INC Financial LogoFinal.svg"></span>
+	</div>-->
 
 	<div class="container" id="linksRow">
 		<div class="item">
-			<plat-link plat-options="{view: '', isUrl: true}"><span class="home">HOME</span></plat-link>
+			<plat-link plat-options="{view: '', isUrl: true}"><span class="home navlink">HOME</span></plat-link>
 		</div>
 		<div class="item">
-			<plat-link plat-options="{view: '/about', isUrl: true}"><span class="about">ABOUT</span></plat-link>
+			<plat-link plat-options="{view: '/portfolio', isUrl: true}"><span class="portfolio navlink">PORTFOLIO</span></plat-link>
+		</div>
+		<div class="imgLogoDiv">
+			<span><img id="INCLogo" src="../images/icons/INC Financial LogoFinal.svg"></img></span>
 		</div>
 		<div class="item">
-			<plat-link plat-options="{view: '/portfolio', isUrl: true}"><span class="portfolio">PORTFOLIO</span></plat-link>
+			<plat-link plat-options="{view: '/about', isUrl: true}"><span class="about navlink">ABOUT</span></plat-link>
 		</div>
 		<div class="item">
-			<plat-link plat-options="{view: '/connect', isUrl: true}"><span class="connect">CONNECT</span></plat-link>
+			<plat-link plat-options="{view: '/connect', isUrl: true}"><span class="connect navlink">CONNECT</span></plat-link>
 		</div>	
 	</div>
 </div>
