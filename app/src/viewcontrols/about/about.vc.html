@@ -1,13 +1,13 @@
 
 		<div class="row">
-			<div class="col-dsk-5 col-phn-12">
+			<div class="col-dsk-5 col-phn-12" plat-tap="teamShow()">
 				<h2 class="friends">
 					<img src="../images/icons/INC logo 3.svg" id="imagetwo">    The Team</h2>
 			</div>
 			<div class="col-dsk-2 col-phn-12">
 				<p></p>
 			</div>
-			<div class="col-dsk-5 col-phn-12">
+			<div class="col-dsk-5 col-phn-12" plat-tap="workShow()">
 				<h2 class="friends">
 					<img src="../images/icons/INC logo 3.svg" id="imagetwo">    How it Works</h2>
 			</div>
@@ -15,7 +15,7 @@
 	
 	
 	
-<div class="mastercontainer">
+<div class="mastercontainer" plat-visible={{teamVisible}}>
 	<div class="row">
 		<div class="col-dsk-8 col-phn-6 col-phn-offset-2">
 			<div class="title">
@@ -209,3 +209,18 @@
 		</div>
 	</div>
 </div>
+
+<div class="container" plat-visible={{worksVisible}}>
+	<div plat-tap="togglePurchases()">Purchases</div>
+		<div id="purchases" plat-visible={{purchasesVisible}}>Purchases text</div>
+	<div plat-tap="toggleIncome()">Income</div>
+		<div id="income" plat-visible={{incomeVisible}}>Income text</div>
+	<div plat-tap="toggleWealth()">Wealth</div>
+		<div id="wealth" plat-visible={{wealthVisible}}>Wealth text</div>
+	<div plat-tap="toggleFinancial()">Financial</div>
+		<div id="financial" plat-visible={{financialVisible}}>Financial text</div>
+</div>
+<!--<div id="purchases" plat-visible={{purchasesVisible}}>Purchases text</div>
+<div id="income" plat-visible={{incomeVisible}}>Income text</div>
+<div id="wealth" plat-visible={{wealthVisible}}>Wealth text</div>
+<div id="financial" plat-visible={{financialVisible}}>Financial text</div>-->
