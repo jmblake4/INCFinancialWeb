@@ -9,10 +9,18 @@
 		.friends {
 			font-family: Gotham-Book;
 			text-align: center;
-			font-size: 45px;
+			font-size: 50px;
 			font-weight: 100;
 			padding-right: 60px;
 			color: white;
+		}
+		.friends:hover{
+			font-family: Gotham-Bold;
+			text-decoration: underline;
+			#imagetwo {
+				background-color: rgba(255,255,255,0.5);
+				border-radius: 50%;
+			}
 		}
 		#imageone {
 			width: 10%;
@@ -52,16 +60,12 @@
 			line-height: 30px;
 			padding-left: 19%;
 			width: 65%;
-
 		}
-
 		.josh2 {
 			float:left;
 			padding-right: 55px;
 			padding-bottom: 23px;
-			width: 350px;
-
-			
+			width: 350px;	
 		}
 		.testimonialswhitefloat {
 			color: white;
@@ -70,13 +74,9 @@
 			padding-left: 19%;
 			width: 65%;
 			clear:both;
-
 		}
-
 		.whiteout {
 			background-color: white;
-
-	
 		}
 		.thickgrey {
 			color: #758b97;
@@ -85,7 +85,6 @@
 			font-size: 28px;
 			border-bottom: solid 4px #758b97;
 			margin-left: 3%;
-
 		}
 		.thingrey {
 			color: #758b97;
@@ -103,15 +102,7 @@
 			line-height: 30px;
 			padding-left: 19%;
 			width: 65%;
-
 		}
-		 .boldtext:hover {
-		 	// text-decoration: underline;
-			.bookfloat {
-				background-color: rgba(126,138,125,0.25);
-				border-radius: 50%;
-			}		
-		 }
 			.center {
 				color: white;
 				background-color: #7e8a7d;
@@ -121,6 +112,7 @@
 			font-family: Gotham-Bold;
 			font-size: 40px;
 			margin: 0 auto;
+			margin-left: 3%; 
 		}
 		.intro {
 			color:white;
@@ -128,6 +120,9 @@
 			margin-left: 17%;
 			margin-right: 17%;
 			font-size: 40px;
+			p{
+				margin-left: 3%;
+			}
 		}
 		.paranohover p {
 			color:#5a604b;
@@ -149,8 +144,6 @@
 			width: 50px;
 			height: 50px;
 			float: right;
-			//padding-top: 5%;
-			// padding-right: 5%;
 			margin-top: 15%;
 			margin-right: 5%;
 		}
@@ -177,7 +170,6 @@
 			}
 			.bookfloat {
 				margin-top: 4%;
-				//padding: 0 auto;
 			}
 			.centerbook {
 				width: 100px;
@@ -185,7 +177,7 @@
 				display:block;
 				margin-left: auto;
 				margin-right: auto;
-				padding-top: 20px;
+				margin-top: 2%;
 			}
 			.btn {
 				text-align: center;
@@ -195,11 +187,37 @@
 				max-width: 67%;
 				margin-left: 16.5%;
 			}		
-
-
 		}
-
-
+	@keyframes zRotate2 {
+		0%   {transform: rotateZ(0deg);
+		}
+		50%   {transform: rotateZ(180deg);
+		}
+		100%   {transform: rotateZ(360deg);
+		}
+	 }
+	@keyframes zenlarge {
+		0%   {transform:  scale3d(1,1,1);
+		}
+		50%   {transform:  scale3d(1.2,1.2,1.2);
+		}
+		100%   {transform:  scale3d(1,1,1);
+		}
+	}
+	.container:hover{	
+		.bookfloat, .centerbook {
+			animation-name: zRotate2;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+		.btn {
+			animation-name: zenlarge;
+			animation-duration: 1s;
+			animation-timing-function: linear;			
+			animation-iteration-count: infinite;
+		}
+	}
 							
 
 }
