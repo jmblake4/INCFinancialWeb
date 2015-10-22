@@ -1,3 +1,17 @@
+@import "../../node_modules/platypusui/dist/platypus";
+
+@dark-grey: #7e7e7e;
+@light-grey: #e2e2e5;
+@platypi-orange: #F68A1E;
+
+/// Sizes
+@navbar-height: 3.2em;
+@container-padding: 1em;
+
+& {
+	#platui > #mixins;
+}
+
 .app {
 	padding-top: 150px;
 }
@@ -10,6 +24,28 @@ body {
 	// background-size: cover;
 	// background-attachment: fixed;
 }
+
+.drawer {
+	@text-color: lighten(@dark-grey, 10%);
+	background-color: #ffffff;
+	padding: 0 1.5em;
+	z-index: -100;
+
+	.drawer-item {
+		// .flex-vertical-center();
+		padding: 0.5em 0;
+		width: 100%;
+		height: @navbar-height;
+		border-bottom: 1px solid @text-color;
+		color: @text-color;
+
+		& > .drawer-icon {
+			height: 75px * 0.6;
+			margin-right: 1em;
+		}
+	}
+}
+
 
 // html {
 // 	padding-top: 100px;
