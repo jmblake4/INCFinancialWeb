@@ -12,8 +12,8 @@ export default class HomeViewControl extends BaseViewControl {
 		detailsVisible: <boolean> false,
 	};
 	
-	toggleDetails(): any {
-		this.context.detailsVisible = this.context.detailsVisible ? false : true;
+	toggleDetails(): void {
+		this.context.detailsVisible = ! this.context.detailsVisible;
 	}
 }
 register.viewControl('home-vc', HomeViewControl);

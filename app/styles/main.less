@@ -1,3 +1,37 @@
+.app {
+	padding-top: 150px;
+}
+
+body {
+	background-image: url('../images/INCBackground.jpg');
+	background-size: 100% 300%;
+	// top: 100px;
+	// overflow: hidden;
+	// background-size: cover;
+	// background-attachment: fixed;
+}
+
+// html {
+// 	padding-top: 100px;
+// }
+
+// #INCLogoDiv {
+// 	width: 75px;
+// 	height: 75px;
+// 	text-align: center;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	padding-top: 50px;
+// }
+
+// #bg-image {
+//   width: 100%;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   z-index: -10;
+// }
+
 @font-face {
 	font-family: Gotham-Black;
 	src: url('../fonts/Gotham-Black.woff');
@@ -19,42 +53,9 @@
 	src: url('../fonts/Gotham-MediumItalic.woff');
 }
 
-.app {
-	padding-top: 150px;
-}
-
-body {
-	background-image: url('../images/INCBackground.jpg');
-	background-size: 100% 300%;
-	// top: 100px;
-	// overflow: hidden;
-	// background-size: cover;
-	// background-attachment: fixed;
-}
-
-html {
-	padding-top: 100px;
-}
-
-// #INCLogoDiv {
-// 	width: 75px;
-// 	height: 75px;
-// 	text-align: center;
-// 	margin-left: auto;
-// 	margin-right: auto;
-// 	padding-top: 50px;
-// }
-
-// #bg-image {
-//   width: 100%;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   z-index: -10;
-// }
-
 @import '../../node_modules/platypusui/dist/platypus';
 
+@import '../src/templatecontrols/footer/footer.tc.less';
 @import '../src/templatecontrols/navbar/navbar.tc.less';
 
 @import '../src/viewcontrols/about/about.vc.less';
