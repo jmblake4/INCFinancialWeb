@@ -5,8 +5,8 @@ export default class ConnectViewControl extends BaseViewControl {
     templateString: string = require('./connect.vc.html');
 
     context: any = {
-		name: <string> 'NAME',
-		email: <string> 'EMAIL'
+		name: <string> '',
+		email: <string> ''
 	};
 
 	registerEmail = function() {
