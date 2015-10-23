@@ -12,13 +12,22 @@
 	#platui > #mixins;
 }
 
+[plat-control="plat-viewport"] {
+	.calc(height; '100% - @{navbar-height}');
+	.scroll(y);
+}
+
+
 .app {
 	padding-top: 150px;
+	background-image: url('../images/INCBackground.jpg');
+	overflow: hidden;
+	background-size: cover;
 }
 
 body {
-	background-image: url('../images/INCBackground.jpg');
-	background-size: 100% 300%;
+	// background-image: url('../images/INCBackground.jpg');
+	// background-size: 100% 300%;
 	// top: 100px;
 	// overflow: hidden;
 	// background-size: cover;
@@ -29,7 +38,7 @@ body {
 	@text-color: lighten(@dark-grey, 10%);
 	background-color: #ffffff;
 	padding: 0 1.5em;
-	z-index: -100;
+	z-index: 1;
 
 	.drawer-item {
 		// .flex-vertical-center();
@@ -45,6 +54,8 @@ body {
 		}
 	}
 }
+
+
 
 
 // html {
