@@ -202,7 +202,9 @@
 					<img src="../images/icons/Book icon.svg" class="centerbook">
 					<br>
 					<div class="btn">
-						<plat-button class="button-neutral button-large">BUY HERE</plat-button>
+						<plat-link plat-options="{view: 'http://www.amazon.com/INC-Financial-Wealth-Create/dp/1495150453/ref=sr_1_1?ie=UTF8&qid=1445526792&sr=8-1&keywords=inc+financial+josh+taylor', isUrl: true}">
+							<plat-button class="button-neutral button-large">BUY HERE</plat-button>
+						</plat-link>
 					</div>
 					<h3 style="border-bottom: 5px solid white;" class='border'></h3>
 					<br>
@@ -216,7 +218,7 @@
 
 <div class="row" plat-visible={{worksVisible}}>
 	<div class="col-dsk-1">
-		<div plat-tap="togglePurchases()"><img src="../images/icons/plus sign circle.svg" id="plus"></div>
+		<div plat-tap="togglePurchases()"><img src="{{imgPurchasesUrl}}" id="plus"></div>
 	</div>
 	<div class="col-dsk-8">
 		<div class="workimage" id="carimage">
@@ -329,7 +331,7 @@
 </div>
 <div class="row" plat-visible={{worksVisible}}>
 	<div class="col-dsk-1">
-		<div plat-tap="toggleIncome()"><img src="../images/icons/plus sign circle.svg" id="plus"></div>
+		<div plat-tap="toggleIncome()"><img src="{{imgIncomeUrl}}" id="plus"></div>
 	</div>
 	<div class="col-dsk-8">
 		<div class="workimage" id="taxfreeimage">
@@ -500,7 +502,7 @@
 
 <div class="row" plat-visible={{worksVisible}}>
 	<div class="col-dsk-1">
-		<div plat-tap="toggleWealth()"><img src="../images/icons/plus sign circle.svg" id="plus"></div>
+		<div plat-tap="toggleWealth()"><img src="{{imgWealthUrl}}" id="plus"></div>
 	</div>
 	<div class="col-dsk-8">
 		<div class="workimage" id="generalimage">
@@ -511,7 +513,7 @@
 
 <div class="worksContainer" plat-visible={{worksVisible}}>
 	<h2>Generational Wealth</h2>
-		<div id="income" class="worksdetails" plat-visible={{wealthVisible}}>
+		<div id="wealth" class="worksdetails" plat-visible={{wealthVisible}}>
 			<div class="row">
 				<div class="col-dsk-4 col-phn-12">
 					<p> What do you want to leave to the next generation? The best thing to leave the next generation is not just money but also the knowledge of how money works.
@@ -595,7 +597,7 @@
 			</div>			
 			<div class="row">
 				<div class="col-dsk-12 col-phn-12">
-					<div plat-tap="toggleIncome()" class="minusborder">
+					<div plat-tap="toggleWealth()" class="minusborder">
 						<p><img src="../images/icons/minus sign circle.svg" id="minus" alt=""></p>
 					</div>
 					<br>
