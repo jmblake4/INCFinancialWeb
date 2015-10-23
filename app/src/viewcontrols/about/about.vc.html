@@ -210,14 +210,127 @@
 	</div>
 </div>
 
-<div class="container" plat-visible={{worksVisible}}>
-	<div plat-tap="togglePurchases()">Purchases</div>
-		<div id="purchases" plat-visible={{purchasesVisible}}>Purchases text</div>
+<div class="worksContainer" plat-visible={{worksVisible}}>
+			<div plat-tap="togglePurchases()">Purchases</div>
+				<div class="workimage" id="carimage">
+					<!--<img src="../images/icons/plus sign circle.svg" id="plus">-->
+					<img src="../images/icons/car icon.svg" alt="" ></div><br>
+					<h2> Finance Purchases</h2>
+			<div id="purchases" plat-visible={{purchasesVisible}}> 
+				<div class="row">
+					<div class="col-phn-2">
+						<h3></h3>
+					</div>
+					<div class="col-phn-2">
+						<p class="line" style="padding-bottom: 38px;"> Most people believe the best way to buy a car is with cash instead of borrowing the money. This way they don’t have to pay interest and can save money. But is that really the best way to buy a car? <br>
+							<br>
+							Interest is — you either spend it or give it up. <br>
+							<br>
+							The problem with spending your cash on the car is that while you save interest, you also lose all the interest that money could have earned for you. <br>
+							<br>
+							Assume you’ve saved $30,000 to buy a car. <br>
+							<br>
+							You now have two choices, you could buy the car with cash and not pay interest <br>
+							-or-
+						</p>
+					</div>					
+					<div class="col-phn-1">
+						<h3></h3>
+					</div>					
+					<div class="col-phn-2">
+						<p  class="line" style="padding-bottom: 14px;">
+							you could use your money as collateral, borrowing the $30,000 and pay interest on the loan. <br>
+							<br>
+							Assume the money you’ve saved is earning 4% each year and the interests rate at which you could borrow is 6%. Would you rather use your cash to buy the car and give up 4% or would you rather borrow at 6% while earning 4%? <br>
+							<br>
+							The most common response to this question is that people would use their cash because borrowing at 6% while you are earning 4% is a 2% loss. <br>
+							<br>
+							It may come as a surprise, but the $30,000 growing at 4% for four years becomes $35,095 and your payments on $30,000 at 6% over four years total $33,818. Borrowing <br>
+						</p>
+					</div>					
+					<div class="col-phn-1">
+						<h3></h3>
+					</div>							
+					<div class="col-phn-2">
+						<p  class="line" style="padding-bottom: 59px;">
+							the money means you’re better off by $1,277. <br>
+							<br>
+							Had you paid cash, it would have cost you $5,095 of potential growth of your money. Paying 6% will cost you $3,818 of interest but you will not be giving up the growth of your money. <br>
+							<br>
+							$30,000 earning 4% interest over four years = $35,095 <br>
+							<br>
+							$30,000 borrowed at 6% interest over four years = $33,818 <br>
+							<br>
+							A difference of $1,277 <br>
+							<br>
+							Earning 4% while paying 6% is the better choice because of the difference created by compound- ing interest versus a depreciating balance. With compound interest
+						</p>
+					</div>					
+					<div class="col-phn-2">
+						<h3></h3>
+					</div>					
+				</div>
+				
+				<div class="row">
+					<div class="col-phn-2">
+						<h3></h3>
+					</div>
+					<div class="col-phn-2">
+						<p>
+							you earn 4% on the original $30,000 plus any previous earnings. At the beginning of year four you are earning 4% on $33,745. With a depreciating balance you are paying 6% on a balance that goes down with each payment. At the beginning of year     four you are paying 6% on just $7,522. The volume is much more important than rate. <br>
+							<br>
+						    Looking at the long term, the original $30,000 earning 4% over 30 years will grow to $97,300. So, in an effort to save $3,800 of interest, people that spend cash on a car lose $67,300 for their retirement. <br>
+							<br>
+						    The INC Wealth Strategy is the third option in the $30,000-car scenario. Instead of storing <br>
+						</p>
+					</div>					
+					<div class="col-phn-1">
+						<h3></h3>
+					</div>					
+					<div class="col-phn-2">
+						<p>
+							money where you have been, you could have been storing money in a dividend-paying whole life insurance policy. You can borrow against the cash value of your policy to buy the car. This allows you to not give up the growth of your money even though you’re using it elsewhere. Then pay back the loan at the same terms you would have paid a bank so that you earn some of the interest they would have earned from you. <br>
+							<br>
+							Imagine not giving up the $67,300 your money could’ve earned and of the $3,800 of interest you would have paid to a bank, paying $1,000 to yourself; that’s the benefit of buying cars through the INC Wealth Strategy. <br>
+						</p>
+					</div>					
+					<div class="col-phn-1">
+						<h3></h3>
+					</div>							
+					<div class="col-phn-2">
+						<p>
+						</p>
+					</div>					
+					<div class="col-phn-2">
+						<h3></h3>
+					</div>					
+				</div>				
+				<div class="row">
+					<div class="col-phn-2"> <p></p> </div>
+					<div class="col-phn-8">
+						<div class="minusborder"> <p><img src="../images/icons/minus sign circle.svg" alt=""></p> </div>
+					</div>
+					<div class="col-phn-2"> <p></p> </div>
+				</div>				
+			</div>
 	<div plat-tap="toggleIncome()">Income</div>
+		<div class="workimage" id="taxfreeimage">
+		<img src="../images/icons/tax free retirement icon.svg" alt=""> </div><br>
+		<h2>Tax-Free Retirement Income</h2>
 		<div id="income" plat-visible={{incomeVisible}}>Income text</div>
+		
+		
 	<div plat-tap="toggleWealth()">Wealth</div>
+		<div class="workimage" id="generalimage">
+		 <img src="../images/icons/generational wealth icon.svg" alt=""></div><br> 
+		 <h2>Generational Wealth</h2>
 		<div id="wealth" plat-visible={{wealthVisible}}>Wealth text</div>
+		
+		
 	<div plat-tap="toggleFinancial()">Financial</div>
+		<div class="workimage" id="bookimage">
+		<img src="../images/icons/Book icon.svg" alt=""> </div><br>
+		<h2>INC Financial: Wealth...Create it. Grow it. Keep it.</h2>
 		<div id="financial" plat-visible={{financialVisible}}>Financial text</div>
 </div>
 <!--<div id="purchases" plat-visible={{purchasesVisible}}>Purchases text</div>
