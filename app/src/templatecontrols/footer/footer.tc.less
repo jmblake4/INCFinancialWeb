@@ -1,74 +1,173 @@
 [plat-control="footer"] {
-	
-	h4 {
-		font-family: Gotham-Medium;
-		font-size: 14px;
-		position: relative;
-		left: 24px;
-		color: white;
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		border-top: 2px solid white;
+		border-bottom: 2px solid white;
+	}
+	.icons {
+		height: 100%;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 0.5);
+		.flex-item{
+			padding-top: 1em;
+			padding-bottom: 1em;
+			padding-left: 2em;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		#phone-icon{
+			padding-left: 0;
+		}
+		.icon {
+			height: 45px;
+			width: 45px;
+			border-radius: 35px;
+			float: left;
+			border: 1px solid white;
+			#mail{
+				height: 20px;
+				width: 40px;
+				display: block;
+				margin: auto;
+				padding-top: 30%;
+			}
+			#phone{
+				height: 40px;
+				width: 20px;
+				display: block;
+				margin: auto;
+				padding-top: 8%;
+			}
+			#house{
+				height: 40px;
+				width: 40px;
+				display: block;
+				margin: auto;
+				padding-top: 4%;
+			}
+		}	
+		p {
+			font-family: Gotham-Medium;
+			font-size: 90%;
+			color: white;
+			padding-left: 18px;
+		}
+		#address{
+			line-height: 95%;
+		}
+	}
+	.social {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		.plat-icon{
+			height: 25px;
+			width: 95px;
+			margin-top: 1em;
+			margin-bottom: 1em;
+			padding-left: 0;
+			img{
+				height: 25px;
+			}	
+		}
+		.flex-items{
+			display: flex;
+			align-items: center;
+			padding-left: 5%;
+			flex-wrap: wrap;
+				p{
+					font-family: Gothic-Book;
+					font-size: 70%;
+					color: white;
+				}
+				#facebook-icon{
+					fill: white;
+					width: 20px; 
+					padding-left: 5px;
+				}
+				#twitter-icon{
+					width: 20px;
+					fill: white;
+					padding-left: 5px;
+				}
+				#linkedin-icon{
+					width: 20px;
+					fill: white;
+					padding-left: 5px;
+				}
+			}
+			#platypi{
+				padding-left: 0;
+				font-family: Gotham-Medium
+			}
 	}
 	
-	.whiteBlock {
-		padding: 20px;
-		padding-top: 30px;
-		background-color: rgba(211,211,211,0.7);
-	}
-	
-	.detail {
-		opacity: 1.0;
-	}
-	
-	.whiteBlock h4 {
-		opacity: 1.0;
-		color: white;
-		// z-index: 10;
-		// float: right;
-		margin-left: 5px;
-		// padding: 20px;
-	}
-	
-	#mail {
-		float: left;
-	}
-	
-	#phone {
-		float: left;
-	}
-	
-	#house {
-		float: left;
-	}
-	
-	.emptyDivTop {
-		height: 35px;
-	}
-	
-	.emptyDiv {
-		height: 25px;
-	}
-	
-	#plat {
-		float: left;
-		position: relative;
-		left: 170px;
-	}
-	
-	.bottomTag p {
-		font-family: Gotham-Medium;
-		font-size: 12px;
-		color: white;
-		text-align: center;
-		white-space: nowrap;
-	}
-	
-	.bt {
-		height: 80px;
-	}
-	
-	// .whiteBlock {
-	// 	border-bottom: white solid 2px;
-	// 	border-top: white solid 2px;
+	// h4 {
+	// 	font-family: Gotham-Medium;
+	// 	font-size: 14px;
+	// 	position: relative;
+	// 	left: 24px;
+	// 	color: white;
 	// }
 	
+	// .whiteBlock {
+	// 	padding: 20px;
+	// 	padding-top: 30px;
+	// 	background-color: rgba(211,211,211,0.7);
+	// }
 	
+	// .detail {
+	// 	opacity: 1.0;
+	// }
+	
+	// .whiteBlock h4 {
+	// 	opacity: 1.0;
+	// 	color: white;
+	// 	margin-left: 5px;
+	// }
+	
+	// #mail {
+	// 	float: left;
+	// }
+	
+	// #phone {
+	// 	float: left;
+	// }
+	
+	// #house {
+	// 	float: left;
+	// }
+	
+	// .emptyDivTop {
+	// 	height: 35px;
+	// }
+	
+	// .emptyDiv {
+	// 	height: 25px;
+	// }
+	
+	// #plat {
+	// 	float: left;
+	// 	position: relative;
+	// 	left: 170px;
+	// }
+	
+	// .bottomTag p {
+	// 	font-family: Gotham-Medium;
+	// 	font-size: 12px;
+	// 	color: white;
+	// 	text-align: center;
+	// 	white-space: nowrap;
+	// }
+	
+	// .bt {
+	// 	height: 80px;
+	// }
 }
