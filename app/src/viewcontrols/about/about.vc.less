@@ -221,9 +221,12 @@
 	 .worksContainer {
 		 color:white;
 		 font-family: Gotham-Medium;
+		 padding-left: 10%;
 		 #purchases {
-		 	.line {
-			 border-bottom: 3px solid white;
+			 padding-right: 100px;
+			 .line {
+				border-bottom: 3px solid white;
+				max-width: 65%;
 		 	}
 			.minusborder {
 				border-bottom: 3px solid white;
@@ -233,24 +236,56 @@
 				margin-left: 50%;
 				width: 60px;
 			}
+			p {
+				padding-right: 50px;
+			}
 		 }
-		 #plus {
-			 width:40px;
-		 }
-		.workimage {
-			width:175px;
-		}	
-			#carimage {
-			}
-			#taxfreeimage{
-				width:175px;				
-			}
-			#bookimage {
-				width:150px;
-			}
 		h2 {
 			border-bottom: 3px solid white;
-			width: 70%;
-		}						
+			width: 92%;
+		}	
+	 }	
+	 		 
+	.workimage {
+		width:175px;	
+		#carimage {
+			float:right;
+			padding-left: 10%;
+			margin-left:20%;
+		}
+		#taxfreeimage{
+			width:175px;				
+		}
+		#bookimage {
+			width:150px;
+		}
+					
 	 }
+	 #plus {
+		width: 40px;
+		float: left;
+		padding-top: 10px;
+		padding-left: 40%;
+	}
+	#carimage {
+		//float:right;
+		padding-left: 20px;
+		//margin-left:20%;
+	}
+	// @keyframes zRotate2 {
+	// 	0%   {transform: rotateZ(0deg);
+	// 	}
+	// 	50%   {transform: rotateZ(180deg);
+	// 	}
+	// 	100%   {transform: rotateZ(360deg);
+	// 	}
+	//  }	
+	// #plus:hover{
+	// 	 .workimage #carimage {
+	// 		animation-name: zRotate2;
+	// 		animation-duration: 1s;
+	// 		animation-timing-function: linear;
+	// 		animation-iteration-count: infinite;
+	// 	}
+	// }	 
 }
