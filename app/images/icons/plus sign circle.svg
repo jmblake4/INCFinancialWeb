@@ -9,5 +9,6 @@
 	.st3{font-size:30.1349px;}
 </style>
 <circle class="st0" cx="16.8" cy="16.8" r="15.8"/>
-<text transform="matrix(1 0 0 1 6.9517 27.1852)" class="st1 st2 st3">+</text>
+<!--<text transform="matrix(1 0 0 1 6.9517 27.1852)" class="st1 st2 st3">+</text>-->
+<text transform="matrix(1 0 0 1 8.4 25)" class="st1 st2 st3">+</text>
 </svg>

@@ -3,7 +3,13 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
-<circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="306.913" cy="378.645" r="204.609"/>
-<line fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" x1="389.122" y1="378.645" x2="224.705" y2="378.645"/>
-<line fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" x1="305.913" y1="297.186" x2="305.913" y2="461.604"/>
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'Gotham-Book';}
+	.st3{font-size:30.1349px;}
+</style>	 
+<circle fill="none" stroke="#FFFFFF" stroke-miterlimit="100" cx="306.913" cy="378.645" r="204.609"/>
+<!--<line fill="none" stroke="#FFFFFF" stroke-width="32" stroke-miterlimit="10" x1="389.122" y1="378.645" x2="224.705" y2="378.645"/>
+<line fill="none" stroke="#FFFFFF" stroke-width="32" stroke-miterlimit="10" x1="305.913" y1="297.186" x2="305.913" y2="461.604"/>-->
 </svg>
