@@ -18,7 +18,9 @@ export default class AboutViewControl extends BaseViewControl {
 		imgPurchasesUrl: <string> '../images/icons/plus sign circle.svg',
 		imgIncomeUrl: <string> '../images/icons/plus sign circle.svg',
 		imgWealthUrl: <string> '../images/icons/plus sign circle.svg',
-		imgFinancialUrl: <string> '../images/icons/plus sign circle.svg'
+		imgFinancialUrl: <string> '../images/icons/plus sign circle.svg',
+		activate: '',
+		activateTwo: ''
 	};
 	
 	teamShow(): void {
@@ -36,7 +38,9 @@ export default class AboutViewControl extends BaseViewControl {
 		this.context.purchasesVisible = false;
 		this.context.incomeVisible = false;
 		this.context.wealthVisible = false;
-		this.context.financialVisible = false;		
+		this.context.financialVisible = false;
+		this.context.activateTwo = 'activeteam',	
+		this.context.activate = ''	
 	}
 
 	togglePurchases(): void {
@@ -63,6 +67,16 @@ export default class AboutViewControl extends BaseViewControl {
 		else this.context.imgFinancialUrl = '../images/icons/minus sign circle.svg';
 	}
 	
+	doIt() {
+		this.context.activate = 'activeteam';
+		this.context.activateTwo = '';
+	}
+	
+
+	
 }
 
 register.viewControl('about-vc', AboutViewControl);
+
+
+	

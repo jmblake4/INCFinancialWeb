@@ -1,13 +1,13 @@
 <div class="row">
 	<div class="col-dsk-5 col-phn-12" plat-tap="teamShow()">
-		<h2 class="friends">
+		<h2 class="headtext {{activate}}" plat-tap="doIt()">
 					<img src="../images/icons/INC logo 3.svg" id="imagetwo">    The Team</h2>
 	</div>
 	<div class="col-dsk-2 col-phn-12">
 		<p></p>
 	</div>
-	<div class="col-dsk-5 col-phn-12" plat-tap="workShow()">
-		<h2 class="friends">
+	<div class="col-dsk-5 col-phn-12 {{activateTwo}}" plat-tap="workShow()" plat-tap="doIt()">
+		<h2 class="headtext">
 					<img src="../images/icons/INC logo 3.svg" id="imagetwo">    How it Works</h2>
 	</div>
 </div>
@@ -222,7 +222,7 @@
 	</div>
 	<div class="col-dsk-8">
 		<div class="workimage" id="carimage">
-			<img src="../images/icons/car icon.svg" alt="">
+			<img src="../images/icons/car icon.svg" plat-tap="togglePurchases()" alt="">
 		</div>
 	</div>
 </div>
@@ -335,7 +335,7 @@
 	</div>
 	<div class="col-dsk-8">
 		<div class="workimage" id="taxfreeimage">
-			<img src="../images/icons/tax free retirement icon.svg" alt="">
+			<img src="../images/icons/tax free retirement icon.svg" plat-tap="toggleIncome()" alt="">
 		</div>
 	</div>
 </div>
@@ -505,7 +505,7 @@
 	</div>
 	<div class="col-dsk-8">
 		<div class="workimage" id="generalimage">
-			<img src="../images/icons/generational wealth icon.svg" alt="">
+			<img src="../images/icons/generational wealth icon.svg" plat-tap="toggleWealth()" alt="">
 		</div>
 	</div>
 </div>
@@ -555,7 +555,7 @@
 				<p><img src="../images/icons/Generational Wealth Steps Diagram White.svg" id="gendia" alt=""></p>
 			</div>
 		</div>
-		<p>*As this proceeds, the death benefit from Generation 2 will go to Generation 4. The death benefit from Genera- tion 3 will
+		<p id="asterisk">*As this proceeds, the death benefit from Generation 2 will go to Generation 4. The death benefit from Genera- tion 3 will
 			go to Generation 5. Instilling these principals for generations to come is not easy but has been done.</p>
 		<div id="noborder">
 			<h2>Vanderbilt v. Rothschild</h2>
@@ -635,7 +635,7 @@
 	</div>
 	<div class="col-dsk-8">
 		<div class="workimage" id="bookimage">
-			<img src="../images/icons/Book icon.svg" alt="">
+			<img src="../images/icons/Book icon.svg" plat-tap="toggleFinancial()" alt="">
 		</div>
 	</div>
 </div>
@@ -653,8 +653,7 @@
 					<div class="col-phn-8">
 						<div class="para">
 							<br>
-							<h3>INC Financial: Wealth...Create it. Grow it. Keep it
-					</h3>
+							<h3>INC Financial: Wealth...Create it. Grow it. Keep it</h3>
 							<h4>by: Josh Taylor</h4>
 							<p><strong class="boldtext"><i>INC Financial: Wealth... Create it. Grow it. Keep it.</i></strong> detailshow and why
 								you should be using whole life insurance as a private financing tool, a source of tax-free retirement income and
@@ -669,37 +668,19 @@
 					<div class="col-phn-2">
 					</div>
 				</div>
-		   <div>
-					
-					
-					
-					<img src="../images/icons/Book icon.svg" class="centerbook">
-					<br>
-					<div class="btn">
-						<plat-link plat-options="{view: 'http://www.amazon.com/INC-Financial-Wealth-Create/dp/1495150453/ref=sr_1_1?ie=UTF8&qid=1445526792&sr=8-1&keywords=inc+financial+josh+taylor', isUrl: true}">
-							<plat-button class="button-neutral button-large">BUY HERE</plat-button>
-						</plat-link>
-					</div>
-				<div class="col-dsk-12 col-phn-12">
-					<div plat-tap="toggleFinancial()" class="minusborder">
-						<p><img src="../images/icons/minus sign circle.svg" id="minus" alt=""></p>
-					</div>
-
+		    <div>
+		   		<img src="../images/icons/Book icon.svg" class="centerbook">
+					<br>					
+				 <div class="btn">
+					<plat-link plat-options="{view: 'http://www.amazon.com/INC-Financial-Wealth-Create/dp/1495150453/ref=sr_1_1?ie=UTF8&qid=1445526792&sr=8-1&keywords=inc+financial+josh+taylor', isUrl: true}">
+						<plat-button class="button-neutral button-large">BUY HERE</plat-button>
+					</plat-link>
 				</div>
-					<br>
-					<br>
-					
-					
-					
+
+				<br>
+				<br>	
 			</div>	
 		</div>
-	
-		
-		
-		
-		
-		
-		
 	</div>
 </div>
 
