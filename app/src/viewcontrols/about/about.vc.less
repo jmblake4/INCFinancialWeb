@@ -191,9 +191,13 @@
 	@keyframes zRotate2 {
 		0%   {transform: rotateZ(0deg);
 		}
-		50%   {transform: rotateZ(180deg);
+		25%   {transform: rotateZ(-25deg);
 		}
-		100%   {transform: rotateZ(360deg);
+		50%   {transform: rotateZ(0deg);
+		}
+		75%   {transform: rotateZ(25deg);
+		}		
+		100%   {transform: rotateZ(0deg);
 		}
 	 }
 	@keyframes zenlarge {
@@ -289,24 +293,27 @@
 		padding-top: 50%;
 		padding-left: 40%;
 	 }
+	@keyframes zRotate2 {
+		0%   {transform: rotateZ(0deg);
+		}
+		25%   {transform: rotateZ(-25deg);
+		}
+		50%   {transform: rotateZ(0deg);
+		}
+		75%   {transform: rotateZ(25deg);
+		}		
+		100%   {transform: rotateZ(0deg);
+		}
+	 }	
+	.workimage:hover{
+			animation-name: zRotate2;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		
+	}	 
 }
 	// }
 	// #carimage {
 		//padding-left: 25px;
-	// }
-	// @keyframes zRotate2 {
-	// 	0%   {transform: rotateZ(0deg);
-	// 	}
-	// 	50%   {transform: rotateZ(180deg);
-	// 	}
-	// 	100%   {transform: rotateZ(360deg);
-	// 	}
-	//  }	
-	// #plus:hover{
-	// 	 .workimage #carimage {
-	// 		animation-name: zRotate2;
-	// 		animation-duration: 1s;
-	// 		animation-timing-function: linear;
-	// 		animation-iteration-count: infinite;
-	// 	}
 	// }
