@@ -649,7 +649,10 @@
 	}
 	
 // --------------- Media Query iPhone 6 / Samsung ----------------------------------
-	@media only screen and (max-width: 500px) {
+	@media only screen 
+	and (min-device-width: 360px) 
+	and (max-device-width: 667px) 
+	and (-webkit-min-device-pixel-ratio: 2) {
 		.headtext {
 			font-family: Gotham-Book;
 			text-align: center;
@@ -710,7 +713,7 @@
 		}
 		.testimonialswhite {
 			color: white;
-			font-size: 14px;
+			font-size: 16px;
 			line-height: 18px;
 			padding-left: 19%;
 			width: 65%;
@@ -719,7 +722,7 @@
 			float:left;
 			padding-right: 55px;
 			padding-bottom: 23px;
-			width: 180px;	
+			width: 210px;	
 		}
 		.testimonialswhitefloat {
 			color: white;
@@ -736,7 +739,7 @@
 			color: #758b97;
 			font-family: Gotham-Black;
 			font-weight: 100;
-			font-size: 14px;
+			font-size: 16px;
 			border-bottom: solid 4px #758b97;
 			margin-left: 3%;
 		}
@@ -752,7 +755,7 @@
 		}
 		.testimonials {
 			color: #758b97;
-			font-size: 14px;
+			font-size: 16px;
 			line-height: 18px;
 			padding-left: 19%;
 			width: 65%;
