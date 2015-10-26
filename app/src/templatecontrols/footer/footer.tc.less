@@ -1,14 +1,16 @@
 [plat-control="footer"] {
 	
-		.emptyDivTop {
+	.emptyDivTop {
 		height: 25px;
 	}
 	
 	.container {
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-around;
+		align-items: center;
 		border-top: 2px solid white;
+		flex-flow: row wrap;
+		align-content: center;
 	}
 	
 	.icons {
@@ -16,13 +18,11 @@
 		width: 100%;
 		background-color: rgba(211, 211, 211, 0.8);
 		.flex-item {
-			padding-top: 0.5em;
-			padding-bottom: 1.5em;
-			padding-left: 10em;
 			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-content: center;
 			align-items: center;
-			flex-wrap: wrap;
-			justify-content: center;
 		}
 		#phone-icon {
 			padding-left: 0;
@@ -31,7 +31,6 @@
 			height: 45px;
 			width: 45px;
 			border-radius: 35px;
-			float: left;
 			// border: 2px solid white;
 			#mail {
 				height: 60px;
@@ -56,7 +55,7 @@
 				// padding-top: 4%;
 			}
 		}	
-		p {
+		p, span {
 			font-family: Gotham-Medium;
 			font-size: 90%;
 			color: white;
@@ -124,93 +123,92 @@
 	
 // ------------- Media Query for mobile ------------
 	
-	@media only screen and (max-width: 500px) {
+	@media only screen
+		and (max-width: 500px) {
 	
-	.emptyDivTop {
-		height: 25px;
-	}
-	
-	.container {
-		display: inline-flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		border-top: 2px solid white;
+		.emptyDivTop {
+			height: 25px;
+		}
 		
-	// display: -ms-flexbox;
-    // display: -webkit-flex;
-    // display: flex;
-    // -webkit-flex-direction: column;
-    // -ms-flex-direction: column;
-    // flex-direction: column;
-    // -webkit-flex-wrap: wrap;
-    // -ms-flex-wrap: wrap;
-    // flex-wrap: wrap;
-    // -webkit-justify-content: center;
-    // -ms-flex-pack: center;
-    // -webkit-align-content: center;
-    // -ms-flex-line-pack: center;
-    // align-content: center;
-    // -webkit-align-items: center;
-    // -ms-flex-align: center;
-    // align-items: center;
-    
-	}
-	
-	.icons {
-		height: 100%;
-		width: 100%;
-		background-color: rgba(211, 211, 211, 0.8);
-		.flex-item {
-			padding-top: 0.5em;
-			padding-bottom: 1.5em;
-			padding-left: 10em;
-			display: inline-flex;
-			align-items: center;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		#phone-icon {
-			padding-left: 0;
-		}
-		.icon {
-			height: 35px;
-			width: 35px;
-			border-radius: 35px;
-			// float: left;
-			#mail {
-				height: 40px;
-				// width: 52px;
-				display: block;
-				margin: auto;
-				padding-bottom: 25%;
+		// .container {
+		// 	display: inline-flex;
+		// 	flex-wrap: wrap;
+		// 	justify-content: center;
+		// 	border-top: 2px solid white;
+			
+		// display: -ms-flexbox;
+		// display: -webkit-flex;
+		// display: flex;
+		// -webkit-flex-direction: column;
+		// -ms-flex-direction: column;
+		// flex-direction: column;
+		// -webkit-flex-wrap: wrap;
+		// -ms-flex-wrap: wrap;
+		// flex-wrap: wrap;
+		// -webkit-justify-content: center;
+		// -ms-flex-pack: center;
+		// -webkit-align-content: center;
+		// -ms-flex-line-pack: center;
+		// align-content: center;
+		// -webkit-align-items: center;
+		// -ms-flex-align: center;
+		// align-items: center;
+		
+		.icons {
+			height: 100%;
+			width: 100%;
+			background-color: rgba(211, 211, 211, 0.8);
+			// .flex-item {
+			// 	padding-top: 0.5em;
+			// 	padding-bottom: 1.5em;
+			// 	padding-left: 10em;
+			// 	display: inline-flex;
+			// 	align-items: center;
+			// 	flex-wrap: wrap;
+			// 	justify-content: center;
+			// }
+			#phone-icon {
+				padding-left: 0;
 			}
-			#phone {
-				// height: 80px;
-				width: 28px;
-				display: block;
-				margin: auto;
-				// padding-top: 2%;
-				padding-bottom: 25%;
+			.icon {
+				height: 35px;
+				width: 35px;
+				border-radius: 35px;
+				// float: left;
+				#mail {
+					height: 40px;
+					// width: 52px;
+					display: block;
+					margin: auto;
+					padding-bottom: 25%;
+				}
+				#phone {
+					// height: 80px;
+					width: 28px;
+					display: block;
+					margin: auto;
+					// padding-top: 2%;
+					padding-bottom: 25%;
+				}
+				#house {
+					height: 40px;
+					width: 40px;
+					display: block;
+					margin: auto;
+					// padding-top: 4%;
+				}
+			}	
+			p, span {
+				font-family: Gotham-Medium;
+				font-size: 80%;
+				color: white;
+				padding-left: 7px;
+				padding-top: 10px;
 			}
-			#house {
-				height: 40px;
-				width: 40px;
-				display: block;
-				margin: auto;
-				// padding-top: 4%;
-			}
+			// #address {
+			// 	line-height: 75%;
+			// }
 		}	
-		p {
-			font-family: Gotham-Medium;
-			font-size: 60%;
-			color: white;
-			padding-left: 7px;
-			padding-top: 10px;
-		}
-		// #address {
-		// 	line-height: 75%;
-		// }
-	}	
 	}
 	
 	
