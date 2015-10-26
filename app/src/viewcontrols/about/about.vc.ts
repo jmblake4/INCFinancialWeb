@@ -19,7 +19,7 @@ export default class AboutViewControl extends BaseViewControl {
 		imgIncomeUrl: <string> '../images/icons/plus sign circle.svg',
 		imgWealthUrl: <string> '../images/icons/plus sign circle.svg',
 		imgFinancialUrl: <string> '../images/icons/plus sign circle.svg',
-		activate: '',
+		activate: 'activeteam',
 		activateTwo: ''
 	};
 	
@@ -30,6 +30,8 @@ export default class AboutViewControl extends BaseViewControl {
 		this.context.incomeVisible = false;
 		this.context.wealthVisible = false;
 		this.context.financialVisible = false;
+		this.context.activate = 'activeteam';
+		this.context.activateTwo = '';
 	}
 	
 	workShow(): void {
