@@ -74,8 +74,6 @@ export default class AboutViewControl extends BaseViewControl {
 		this.context.activateTwo = '';
 	}
 	
-
-	
 }
 
 register.viewControl('about-vc', AboutViewControl);

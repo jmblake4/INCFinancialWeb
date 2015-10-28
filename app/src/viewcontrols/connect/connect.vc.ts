@@ -9,7 +9,7 @@ export default class ConnectViewControl extends BaseViewControl {
 		email: <string> ''
 	};
 
-	registerEmail = function() {
+	registerEmail(): void {
 		alert(this.context.name + "\n" + this.context.email);
 	}
 
