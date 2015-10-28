@@ -38,3 +38,5 @@ cordova/plugins
 
 # Distribution files
 app/dist
+
+bower_components
