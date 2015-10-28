@@ -1,7 +1,12 @@
 [plat-control="footer"] {
 	
-	.emptyDivTop {
-		height: 25px;
+	font-family: Gotham-Medium;
+	font-size: 16px;
+	color: white;
+	align-items: center;
+	
+	.empty-div-top {
+		height: 1.25em;
 	}
 	
 	.container {
@@ -31,197 +36,68 @@
 		}
 		
 		.icon {
-			height: 45px;
-			width: 45px;
-			border-radius: 35px;
+			height: 2.812em;
+			width: 2.812em;
+			border-radius: 2.187em;
 			#mail {
-				height: 60px;
+				height: 3.75em;
 				padding-bottom: 25%;
 			}
 			#phone {
-				width: 45px;
+				width: 2.812em;
 				padding-bottom: 25%;
 			}
 			#house {
-				height: 60px;
-				width: 60px;
+				height: 3.75em;
+				width: 3.75em;
 			}
 		}	
 		p, span {
-			font-family: Gotham-Medium;
 			font-size: 90%;
 			color: white;
-			padding-left: 18px;
-			padding-top: 10px;
-		}
-		#address {
-			line-height: 95%;
+			padding-left: 1.125em;
+			padding-top: 1.125em;
 		}
 	}
 	
 	.social {
-		height: 100%;
-		width: 100%;
 		display: flex;
 		justify-content: center;
-		align-items: center;
 		flex-wrap: wrap;
 		.plat-icon {
-			padding-left: 0;
+			padding: .9em;
 			img {
-				height: 120px;
+				height: 2.142em;
 			}	
 		}
 		
 		.flex-items {
 			display: flex;
-			align-items: center;
 			padding-left: 1%;
 			flex-wrap: wrap;
 			white-space: nowrap;
-				p {
-					font-family: Gothic-Black;
-					font-size: 70%;
-					color: white;
-				}
-				#fb {
-					width: 20px;
-					padding-left: 15px;
-				}
-				#twit {
-					width: 20px;
-					padding-left: 15px;
-				}
-				#linked {
-					width: 20px;
-					padding-left: 15px;
-				}
+			p {
+				font-size: 60%;
+				color: white;
 			}
-			
-			#platypi {
-				padding-left: 0;
-				font-family: Gotham-Black;
+			#fb {
+				width: 1.25em;
+				padding-left: 0.937em;
 			}
-			
-			.flex-items p {
-				font-family: Gotham-Medium;
+			#twit {
+				width: 1.25em;
+				padding-left: 0.937em;
 			}
+			#linked {
+				width: 1.25em;
+				padding-left: 0.937em;
+			}
+		}
 	}
 	
-// ------------- Media Query for mobile ------------
-	
+// ----------------- Media Query for mobile 500px -----------------
 	@media only screen
 		and (max-width: 500px) {
-	
-		.emptyDivTop {
-			height: 25px;
-		}
-		
-		.icons {
-			height: 100%;
-			width: 100%;
-			background-color: rgba(211, 211, 211, 0.8);
-			#phone-icon {
-				padding-left: 0;
-			}
-			
-			.icon {
-				height: 35px;
-				width: 35px;
-				border-radius: 35px;
-				#mail {
-					height: 40px;
-					display: block;
-					margin: auto;
-					padding-bottom: 25%;
-				}
-				#phone {
-					width: 28px;
-					display: block;
-					margin: auto;
-					padding-bottom: 25%;
-				}
-				#house {
-					height: 40px;
-					width: 40px;
-					display: block;
-					margin: auto;
-				}
-			}
-				
-			p, span {
-				font-family: Gotham-Medium;
-				font-size: 80%;
-				color: white;
-				padding-left: 7px;
-				padding-top: 10px;
-			}
-		}	
+		font-size: 12px;
 	}
 }
-	
-	
-// -------------Original Footer before flex box-------------------
-	
-	// h4 {
-	// 	font-family: Gotham-Medium;
-	// 	font-size: 14px;
-	// 	position: relative;
-	// 	left: 24px;
-	// 	color: white;
-	// }
-	
-	// .whiteBlock {
-	// 	padding: 20px;
-	// 	padding-top: 30px;
-	// 	background-color: rgba(211,211,211,0.7);
-	// }
-	
-	// .detail {
-	// 	opacity: 1.0;
-	// }
-	
-	// .whiteBlock h4 {
-	// 	opacity: 1.0;
-	// 	color: white;
-	// 	margin-left: 5px;
-	// }
-	
-	// #mail {
-	// 	float: left;
-	// }
-	
-	// #phone {
-	// 	float: left;
-	// }
-	
-	// #house {
-	// 	float: left;
-	// }
-	
-	// .emptyDivTop {
-	// 	height: 35px;
-	// }
-	
-	// .emptyDiv {
-	// 	height: 25px;
-	// }
-	
-	// #plat {
-	// 	float: left;
-	// 	position: relative;
-	// 	left: 170px;
-	// }
-	
-	// .bottomTag p {
-	// 	font-family: Gotham-Medium;
-	// 	font-size: 12px;
-	// 	color: white;
-	// 	text-align: center;
-	// 	white-space: nowrap;
-	// }
-	
-	// .bt {
-	// 	height: 80px;
-	// }
-

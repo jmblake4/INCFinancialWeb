@@ -1,363 +1,122 @@
 [plat-control="portfolio-vc"] {
-	color:white;
-
-	#imageone {
-		width: 10%;
-		height: 10%;
-		vertical-align: -25%;
-	}
-	#imagetwo {
-		width: 11%;
-		height: 11%;
-		vertical-align: -20%;
-	}
 	.mastercontainer {
-		.headtext {
-			font-family: Gotham-Book;
-			text-align: center;
-			font-size: 40px;
-			font-weight: 100;
-			padding-right: 60px;
-			color: white;
+		color: white;
+		font-weight: 100;
+		font-family: Gotham-Book;
+		.circle-bar {
+			width: 60px;
+			height: 60px;
+			vertical-align: -20%;
 		}
-		.headtext:hover{
+		.head-text {
+			font-size: 3em;
+			text-align: center;
+		}
+		.head-text:hover{
 			font-family: Gotham-Bold;
 			text-decoration: underline;
-			#imagetwo {
+			cursor: pointer;
+			cursor: hand;
+			.circle-bar {
 				background-color: rgba(255,255,255,0.5);
 				border-radius: 50%;
 			}
 		}
+		p {
+			font-size: 1.5em;
+			line-height: 1.5em;
+			width: 65%;	
+			margin-top: 0;	
+		}
 		.whiteout {
 		background-color: white;
-		border-bottom: solid 4px #758b97;	
+		border-bottom: solid 0.25em #758b97;
+		color: #758b97;
+			.thick-gray {
+				font-family: Gotham-Black;
+				font-size: 1.875em;
+				border-bottom: solid 4px #758b97;
+			}
+			.thin-gray {
+				font-family: Gotham-Book;
+			}
 		}
 		.box {
 			width: 100%;
-			float:left;
-			
-		}
-		.thickgrey {
-			color: #758b97;
-			font-family: Gotham-Black;
-			font-weight: 100;
-			font-size: 30px;
-			border-bottom: solid 4px #758b97;
-
-		}
-		.thingrey {
-			color: #758b97;
-			font-family: Gotham-Book;
-			font-weight: 100;
-		}
-		.gwyn {
+			float:left;		
+		}		
+		.pics {
 			float:right;
-			padding-right: 60px;
+			padding-right: 5%;
 			padding-bottom: 20px;
-			width: 400px;
+			width: 30em;
 		}
-		.testimonials {
-			color: #758b97;
-			font-size: 24px;
-			line-height: 32px;
-			margin-top: -7px;
-			padding-left: 14px;
-			width: 70%;
-		}
-		#graybar {
+		.gray-bar {
 			width: 40px;
 			height: 40px;
 			float:right;
-	
 		}
-		.imageback {
+		.image-back {
  	    background: -webkit-linear-gradient(left bottom, #455D6E , #8A979C); /* For Safari 5.1 to 6.0 */
         background: -o-linear-gradient(bottom right, #455D6E , #8A979C); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(bottom right, #455D6E , #8A979C); /* For Firefox 3.6 to 15 */
         background: linear-gradient(to top right, #455D6E , #8A979C); /* Standard syntax */
 	   }
-		#whitebar {
+		.white-bar {
 			width: 40px;
 			height: 40px;
 			float:right;
-
 		}
-		.thickwhite{
+		.thick-white{
 			color: white;
 			border-bottom: solid 4px white;
 			font-size: 30px;
 			font-family: Gotham-Black;
 			font-weight: 100;
 		}
-		.thinwhite {
+		.thin-white {
 			color: white;
 			font-family: Gotham-Book;
 			font-weight: 100;
 		}
-		.testimonialswhite {
+		.testimonials-white {
 			color: white;
-			font-size: 24px;
-			line-height: 32px;
-			margin-top: -7px;
-			padding-left: 14px;
-			width: 70%;
-		}
-		.Roman {
-			float:right;
-			padding-right: 60px;
-			width: 400px;
-			padding-bottom: 20px;
 		}
 		.block {
 			background-color: white;
 		}
 		.block2 {
 			background-color: white;
-			border-bottom: solid 4px #758b97;
-			
+			border-bottom: solid 4px #758b97;			
 		}
-	}
-	
-// ---------------Media Query iPhone 4/5----------------------------------
-	@media only screen and (max-width: 500px) {
-		color:white;
-		
-	#imageone {
-		width: 10%;
-		height: 10%;
-		vertical-align: -25%;
-	}
-	#imagetwo {
-		width: 11%;
-		height: 11%;
-		vertical-align: -20%;
-	}
-	.mastercontainer {
-		.headtext {
-			font-family: Gotham-Book;
-			text-align: center;
-			font-size: 20px;
-			font-weight: 100;
-			color: white;
-		}
-		.headtext:hover{
-			font-family: Gotham-Bold;
-			text-decoration: underline;
-			#imagetwo {
-				background-color: rgba(255,255,255,0.5);
-				border-radius: 50%;
+	}	
+@media only screen and (max-width: 900px) {
+		.mastercontainer {
+			.pics {
+				float: none;
+				padding-left: 8%;
+				padding-right:20%;
+				padding-bottom: 20px;
+				width: 20em;
+			}
+			p {
+				margin: 0 auto;
+			}
+			.gray-bar{
+				display: none;
+			}
+			.white-bar {
+				display: none;
+			}
+			.slash {
+				display: none;				
+			}
+			p {
+				font-size: 1em;
+			}
+			.testimonials-white {
+				font-size: 1em;
 			}
 		}
-		.whiteout {
-		background-color: white;
-		border-bottom: solid 2px #758b97;	
-		}
-		.box {
-			width: 100%;
-			float:left;
-		}
-		.thickgrey {
-			color: #758b97;
-			font-family: Gotham-Black;
-			font-weight: 100;
-			font-size: 20px;
-			border-bottom: solid 4px #758b97;
-		}
-		.thingrey {
-			color: #758b97;
-			font-family: Gotham-Book;
-			font-weight: 100;
-		}
-		.gwyn {
-			float:right;
-			padding-right: 60px;
-			padding-bottom: 20px;
-			width: 150px;
-			padding-right: 110px;
-		}
-		.testimonials {
-			color: #758b97;
-			font-size: 14px;
-			line-height: 18px;
-			margin-top: -7px;
-			padding-left: 14px;
-			width: 70%;
-		}
-		#graybar {
-			width: 25px;
-			height: 25px;
-			float:right;
-	
-		}
-		.imageback {
- 	    background: -webkit-linear-gradient(left bottom, #7896a8 , #c5c8c4); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(bottom right, #7896a8 , #c5c8c4); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(bottom right, #7896a8 , #c5c8c4); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(to top right, #455D6E , #8A979C); /* Standard syntax */
-	   }
-		#whitebar {
-			width: 25px;
-			height: 25px;
-			float:right;
-
-		}
-		.thickwhite{
-			color: white;
-			border-bottom: solid 4px white;
-			font-size: 20px;
-			font-family: Gotham-Black;
-			font-weight: 100;
-		}
-		.thinwhite {
-			color: white;
-			font-family: Gotham-Book;
-			font-weight: 100;
-		}
-		.testimonialswhite {
-			color: white;
-			font-size: 14px;
-			line-height: 18px;
-			margin-top: -7px;
-			padding-left: 14px;
-			width: 70%;
-		}
-		.Roman {
-			float:right;
-			padding-right: 60px;
-			width: 150px;
-			padding-bottom: 20px;
-			padding-right: 110px;
-		}
-		.block {
-			background-color: white;
-		}
-		.block2 {
-			background-color: white;
-			border-bottom: solid 4px #758b97;
-		}
-	}
-	}
-
-// --------------- Media Query iPhone 6 / Samsung ----------------------------------
-		@media only screen 
-	and (min-device-width: 360px) 
-	and (max-device-width: 667px) 
-	and (-webkit-min-device-pixel-ratio: 2) { 
-
-color:white;
-		
-	#imageone {
-		width: 10%;
-		height: 10%;
-		vertical-align: -25%;
-	}
-	#imagetwo {
-		width: 11%;
-		height: 11%;
-		vertical-align: -20%;
-	}
-	.mastercontainer {
-		.headtext {
-			font-family: Gotham-Book;
-			text-align: center;
-			font-size: 20px;
-			font-weight: 100;
-			color: white;
-		}
-		.headtext:hover{
-			font-family: Gotham-Bold;
-			text-decoration: underline;
-			#imagetwo {
-				background-color: rgba(255,255,255,0.5);
-				border-radius: 50%;
-			}
-		}
-		.whiteout {
-		background-color: white;
-		border-bottom: solid 2px #758b97;	
-		}
-		.box {
-			width: 100%;
-			float:left;
-		}
-		.thickgrey {
-			color: #758b97;
-			font-family: Gotham-Black;
-			font-weight: 100;
-			font-size: 14px;
-			border-bottom: solid 4px #758b97;
-		}
-		.thingrey {
-			color: #758b97;
-			font-family: Gotham-Book;
-			font-weight: 100;
-		}
-		.gwyn {
-			float:right;
-			padding-bottom: 20px;
-			width: 180px;
-			padding-right: 120px;
-		}
-		.testimonials {
-			color: #758b97;
-			font-size: 14px;
-			line-height: 18px;
-			margin-top: -7px;
-			padding-left: 14px;
-			width: 70%;
-		}
-		#graybar {
-			width: 18px;
-			height: 18px;
-			float:right;
-		}
-		.imageback {
- 	    background: -webkit-linear-gradient(left bottom, #7896a8 , #c5c8c4); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(bottom right, #7896a8 , #c5c8c4); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(bottom right, #7896a8 , #c5c8c4); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(to top right, #455D6E , #8A979C); /* Standard syntax */
-	   }
-		#whitebar {
-			width: 18px;
-			height: 18px;
-			float:right;
-		}
-		.thickwhite{
-			color: white;
-			border-bottom: solid 4px white;
-			font-size: 14px;
-			font-family: Gotham-Black;
-			font-weight: 100;
-		}
-		.thinwhite {
-			color: white;
-			font-family: Gotham-Book;
-			font-weight: 100;
-		}
-		.testimonialswhite {
-			color: white;
-			font-size: 14px;
-			line-height: 18px;
-			margin-top: -7px;
-			padding-left: 14px;
-			width: 70%;
-		}
-		.Roman {
-			float:right;
-			width: 180px;
-			padding-bottom: 20px;
-			padding-right: 120px;
-		}
-		.block {
-			background-color: white;
-		}
-		.block2 {
-			background-color: white;
-			border-bottom: solid 4px #758b97;
-		}
-	}
-
-
+	}	
 }
-}
-
