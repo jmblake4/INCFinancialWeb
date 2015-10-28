@@ -3,7 +3,6 @@ import HomeViewControl from '../viewcontrols/home/home.vc';
 import AboutViewControl from '../viewcontrols/about/about.vc';
 import PortfolioViewControl from '../viewcontrols/portfolio/portfolio.vc';
 import ConnectViewControl from '../viewcontrols/connect/connect.vc';
-import HomeTwoViewControl from '../viewcontrols/homeTwo/homeTwo.vc';
 
 export default class MyApp extends App {
     constructor(router: routing.Router) {
@@ -14,7 +13,6 @@ export default class MyApp extends App {
             { pattern: 'about', view: AboutViewControl },
             { pattern: 'portfolio', view: PortfolioViewControl },
             { pattern: 'connect', view: ConnectViewControl },
-            { pattern: 'hometwo', view: HomeTwoViewControl }           
         ]);
     }
 

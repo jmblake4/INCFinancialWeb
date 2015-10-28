@@ -1,102 +1,11 @@
 @import "../../node_modules/platypusui/dist/platypus";
-
-@dark-grey: #7e7e7e;
-@light-grey: #e2e2e5;
-@platypi-orange: #F68A1E;
-
-/// Sizes
-@navbar-height: 3.2em;
-@container-padding: 1em;
-
-& {
-	#platui > #mixins;
-}
-
-.app {
-	background-image: url('../images/INCBackground.jpg');
-	overflow: hidden;
-	background-size: cover;
-}
-
-.drawer {
-	@text-color: lighten(@dark-grey, 10%);
-	background-color: #ffffff;
-	padding: 0 1.5em;
-	z-index: 1;
-
-	.drawer-item {
-		padding: 0.5em 0;
-		width: 100%;
-		height: @navbar-height;
-		border-bottom: 1px solid @text-color;
-		color: @text-color;
-
-		& > .drawer-icon {
-			height: 75px * 0.6;
-			margin-right: 1em;
-		}
-	}
-}
-
-	@media only screen and (min-width: 501px) {
-		#hamburger {
-			position: absolute;
-			left: 0;
-			top: 0;
-			color: white;
-			display: none;
-		}
-		
-		.app {
-			padding-top: 150px;
-		}
-	}
-	
-	@media only screen and (max-width: 500px) {
-		#hamburger {
-			position: absolute;
-			left: 0;
-			top: 0;
-			color: white;
-			display: block;
-		}
-		#linksRow {
-			display: none;
-		}
-		
-		.app {
-			padding-top: 50px;
-		}
-	}
-
-@font-face {
-	font-family: Gotham-Black;
-	src: url('../fonts/Gotham-Black.woff');
-}
-@font-face {
-	font-family: Gotham-Bold;
-	src: url('../fonts/Gotham-Bold.woff');
-}
-@font-face {
-	font-family: Gotham-Book;
-	src: url('../fonts/Gotham-Book.woff');
-}
-@font-face {
-	font-family: Gotham-Medium;
-	src: url('../fonts/Gotham-Medium.woff');
-}
-@font-face {
-	font-family: Gotham-MediumItalic;
-	src: url('../fonts/Gotham-MediumItalic.woff');
-}
-
+@import 'background.less';
+@import 'nav.less';
+@import 'fonts.less';
 @import '../../node_modules/platypusui/dist/platypus';
-
 @import '../src/templatecontrols/footer/footer.tc.less';
 @import '../src/templatecontrols/navbar/navbar.tc.less';
-
 @import '../src/viewcontrols/about/about.vc.less';
 @import '../src/viewcontrols/connect/connect.vc.less';
 @import '../src/viewcontrols/home/home.vc.less';
-@import '../src/viewcontrols/hometwo/hometwo.vc.less';
 @import '../src/viewcontrols/portfolio/portfolio.vc.less';

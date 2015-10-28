@@ -3,22 +3,25 @@ import BaseViewControl from '../base/base.vc';
 import HomeViewControl from '../../viewcontrols/home/home.vc';
 import ConnectViewControl from '../../viewcontrols/connect/connect.vc';
 import PortfolioViewControl from '../../viewcontrols/portfolio/portfolio.vc';
-import HomeTwoViewControl from '../../viewcontrols/hometwo/hometwo.vc';
 
 export default class AboutViewControl extends BaseViewControl {
     templateString: string = require('./about.vc.html');
 
-    context: any = {
-		teamVisible: <boolean> true,
-		worksVisible: <boolean> false,
-		purchasesVisible: <boolean> false,
-		incomeVisible: <boolean> false,
-		wealthVisible: <boolean> false,
-		financialVisible: <boolean> false,
-		imgPurchasesUrl: <string> '../images/icons/plus sign circle.svg',
-		imgIncomeUrl: <string> '../images/icons/plus sign circle.svg',
-		imgWealthUrl: <string> '../images/icons/plus sign circle.svg',
-		imgFinancialUrl: <string> '../images/icons/plus sign circle.svg',
+    context: contexts.IAbout = {
+		imgPlusMinusUrl: <models.IPlusMinusURL> {
+			plusUrl: '../images/icons/plus sign circle.svg',
+			minusUrl: '../images/icons/minus sign circle.svg'
+		},
+		teamVisible: true,
+		worksVisible: false,
+		purchasesVisible: false,
+		incomeVisible: false,
+		wealthVisible: false,
+		financialVisible: false,
+		imgPurchasesUrl: '../images/icons/plus sign circle.svg',
+		imgIncomeUrl: '../images/icons/plus sign circle.svg',
+		imgWealthUrl: '../images/icons/plus sign circle.svg',
+		imgFinancialUrl: '../images/icons/plus sign circle.svg',
 		activate: 'activeteam',
 		activateTwo: ''
 	};
@@ -46,27 +49,23 @@ export default class AboutViewControl extends BaseViewControl {
 	}
 
 	togglePurchases(): void {
-		this.context.purchasesVisible = ! this.context.purchasesVisible;
-		if (!this.context.purchasesVisible) this.context.imgPurchasesUrl = '../images/icons/plus sign circle.svg';
-		else this.context.imgPurchasesUrl = '../images/icons/minus sign circle.svg';
+		this.context.purchasesVisible = !this.context.purchasesVisible;
+		this.context.imgPurchasesUrl = this.context.purchasesVisible ? this.context.imgPlusMinusUrl.minusUrl : this.context.imgPlusMinusUrl.plusUrl;
 	}
 
 	toggleIncome(): void {
-		this.context.incomeVisible = ! this.context.incomeVisible;
-		if (!this.context.incomeVisible) this.context.imgIncomeUrl = '../images/icons/plus sign circle.svg';
-		else this.context.imgIncomeUrl = '../images/icons/minus sign circle.svg';
+		this.context.incomeVisible = !this.context.incomeVisible;
+		this.context.imgIncomeUrl = this.context.incomeVisible ? this.context.imgPlusMinusUrl.minusUrl : this.context.imgPlusMinusUrl.plusUrl;
 	}
 
 	toggleWealth(): void {
-		this.context.wealthVisible = ! this.context.wealthVisible;
-		if (!this.context.wealthVisible) this.context.imgWealthUrl = '../images/icons/plus sign circle.svg';
-		else this.context.imgWealthUrl = '../images/icons/minus sign circle.svg';
+		this.context.wealthVisible = !this.context.wealthVisible;
+		this.context.imgWealthUrl = this.context.wealthVisible ? this.context.imgPlusMinusUrl.minusUrl : this.context.imgPlusMinusUrl.plusUrl;
 	}
 
 	toggleFinancial(): void {
-		this.context.financialVisible = ! this.context.financialVisible;
-		if (!this.context.financialVisible) this.context.imgFinancialUrl = '../images/icons/plus sign circle.svg';
-		else this.context.imgFinancialUrl = '../images/icons/minus sign circle.svg';
+		this.context.financialVisible = !this.context.financialVisible;
+		this.context.imgFinancialUrl = this.context.financialVisible ? this.context.imgPlusMinusUrl.minusUrl : this.context.imgPlusMinusUrl.plusUrl;
 	}
 	
 	doIt() {
@@ -77,6 +76,3 @@ export default class AboutViewControl extends BaseViewControl {
 }
 
 register.viewControl('about-vc', AboutViewControl);
-
-
-	

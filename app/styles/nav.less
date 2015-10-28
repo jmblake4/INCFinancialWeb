@@ -1,0 +1,57 @@
+@dark-grey: #7e7e7e;
+@light-grey: #e2e2e5;
+
+/// Sizes
+@navbar-height: 3.2em;
+@container-padding: 1em;
+
+.drawer {
+	@text-color: lighten(@dark-grey, 10%);
+	background-color: #ffffff;
+	padding: 0 1.5em;
+	z-index: 1;
+
+	.drawer-item {
+		padding: 0.5em 0;
+		width: 100%;
+		height: @navbar-height;
+		border-bottom: 1px solid @text-color;
+		color: @text-color;
+
+		& > .drawer-icon {
+			height: 75px * 0.6;
+			margin-right: 1em;
+		}
+	}
+}
+
+	@media only screen and (min-width: 501px) {
+		#hamburger {
+			position: absolute;
+			left: 0;
+			top: 0;
+			color: white;
+			display: none;
+		}
+		
+		.app {
+			padding-top: 150px;
+		}
+	}
+	
+	@media only screen and (max-width: 500px) {
+		#hamburger {
+			position: absolute;
+			left: 0;
+			top: 0;
+			color: white;
+			display: block;
+		}
+		#linksRow {
+			display: none;
+		}
+		
+		.app {
+			padding-top: 50px;
+		}
+	}

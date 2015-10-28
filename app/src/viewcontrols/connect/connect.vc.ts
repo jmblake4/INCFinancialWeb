@@ -4,13 +4,13 @@ import BaseViewControl from '../base/base.vc';
 export default class ConnectViewControl extends BaseViewControl {
     templateString: string = require('./connect.vc.html');
 
-    context: any = {
-		name: <string> '',
-		email: <string> ''
+    context: contexts.IConnect = {
+		name: '',
+		email: ''
 	};
 
 	registerEmail(): void {
-		alert(this.context.name + "\n" + this.context.email);
+		alert(this.context.name + '\n' + this.context.email);
 	}
 
 }
