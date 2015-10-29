@@ -27,57 +27,57 @@ export default class AboutViewControl extends BaseViewControl {
 	};
 	
 	teamShow(): void {
-		let c = this.context;
-		c.teamVisible = true;
-		c.worksVisible = false;
-		c.purchasesVisible = false;
-		c.incomeVisible = false;
-		c.wealthVisible = false;
-		c.financialVisible = false;
-		c.activate = 'activeteam';
-		c.activateTwo = '';
+		let context =  this.context;
+		context.teamVisible = true;
+		context.worksVisible = false;
+		context.purchasesVisible = false;
+		context.incomeVisible = false;
+		context.wealthVisible = false;
+		context.financialVisible = false;
+		context.activate = 'activeteam';
+		context.activateTwo = '';
 	}
 	
 	workShow(): void {
-		let c = this.context;
-		c.teamVisible = false;
-		c.worksVisible = true;
-		c.purchasesVisible = false;
-		c.incomeVisible = false;
-		c.wealthVisible = false;
-		c.financialVisible = false;
-		c.activateTwo = 'activeteam',	
-		c.activate = ''	
+		let context =  this.context;
+		context.teamVisible = false;
+		context.worksVisible = true;
+		context.purchasesVisible = false;
+		context.incomeVisible = false;
+		context.wealthVisible = false;
+		context.financialVisible = false;
+		context.activateTwo = 'activeteam',	
+		context.activate = ''	
 	}
 
 	togglePurchases(): void {
-		let c = this.context;
-		c.purchasesVisible = !c.purchasesVisible;
-		c.imgPurchasesUrl = c.purchasesVisible ? c.imgPlusMinusUrl.minusUrl : c.imgPlusMinusUrl.plusUrl;
+		let context =  this.context;
+		context.purchasesVisible = !context.purchasesVisible;
+		context.imgPurchasesUrl = context.purchasesVisible ? context.imgPlusMinusUrl.minusUrl : context.imgPlusMinusUrl.plusUrl;
 	}
 
 	toggleIncome(): void {
-		let c = this.context;
-		c.incomeVisible = !c.incomeVisible;
-		c.imgIncomeUrl = c.incomeVisible ? c.imgPlusMinusUrl.minusUrl : c.imgPlusMinusUrl.plusUrl;
+		let context =  this.context;
+		context.incomeVisible = !context.incomeVisible;
+		context.imgIncomeUrl = context.incomeVisible ? context.imgPlusMinusUrl.minusUrl : context.imgPlusMinusUrl.plusUrl;
 	}
 
 	toggleWealth(): void {
-		let c = this.context;
-		c.wealthVisible = !c.wealthVisible;
-		c.imgWealthUrl = c.wealthVisible ? c.imgPlusMinusUrl.minusUrl : c.imgPlusMinusUrl.plusUrl;
+		let context =  this.context;
+		context.wealthVisible = !context.wealthVisible;
+		context.imgWealthUrl = context.wealthVisible ? context.imgPlusMinusUrl.minusUrl : context.imgPlusMinusUrl.plusUrl;
 	}
 
 	toggleFinancial(): void {
-		let c = this.context;
-		c.financialVisible = !c.financialVisible;
-		c.imgFinancialUrl = c.financialVisible ? c.imgPlusMinusUrl.minusUrl : c.imgPlusMinusUrl.plusUrl;
+		let context =  this.context;
+		context.financialVisible = !context.financialVisible;
+		context.imgFinancialUrl = context.financialVisible ? context.imgPlusMinusUrl.minusUrl : context.imgPlusMinusUrl.plusUrl;
 	}
 	
 	doIt() {
-		let c = this.context;
-		c.activate = 'activeteam';
-		c.activateTwo = '';
+		let context =  this.context;
+		context.activate = 'activeteam';
+		context.activateTwo = '';
 	}
 	
 }
