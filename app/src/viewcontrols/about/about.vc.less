@@ -123,43 +123,6 @@
 			margin-top: 15%;
 			margin-right: 5%;
 		}
-		.greenout {
-			background-color: #7e8a7d;
-			h3 {
-				font-family: Gotham-MediumItalic;
-				margin: 1px auto;
-				line-height: 25px;
-			}
-			h4 {
-				margin: 0 auto;
-			}
-			p {
-				color:white;
-				font-family: Gotham-Book;
-				font-weight: 500;
-			}
-			h2{
-				margin: 0 auto;
-				font-family: Gotham-Bold;
-				font-size: 50px;
-			}
-			.center-book {
-				width: 100px;
-				height: 100px;
-				display:block;
-				margin-left: auto;
-				margin-right: auto;
-				margin-top: 2%;
-			}
-			.btn {
-				text-align: center;
-				padding-bottom: 25px;
-			}
-			.border {
-				max-width: 67%;
-				margin-left: 16.5%;
-			}		
-		}
 	@keyframes zRotate2 {
 		0%   {transform: rotateZ(0deg);}
 		25%   {transform: rotateZ(-25deg);}
@@ -186,7 +149,139 @@
 			animation-iteration-count: infinite;
 		}
 	}
+
+	 .worksContainer {
+		 color:white;
+		 font-family: Gotham-Medium;
+		 padding-left: 10%;
+		 .works-details {
+			 padding-right: 10%;
+			 .line {
+				border-bottom: 3px solid white;
+				max-width: 80%;
+		 	}
+			.minus-border {
+				border-bottom: 3px solid white;
+				border-top: 3px solid white;
+			}
+			p {
+				padding-right: 25px;
+				padding-left: 25px;
+			}
+		 }
+		.green-out {
+			background-color: #7e8a7d;
+			h3 {
+				font-family: Gotham-MediumItalic;
+				margin: 1px auto;
+				line-height: 25px;
+			}
+			h4 {
+				margin: 0 auto;
+			}
+			p {
+				font-weight: 500;
+			}
+			h2{
+				margin: 0 auto;
+				font-family: Gotham-Bold;
+				font-size: 50px;
+			}
+			.center-book {
+				width: 100px;
+				height: 100px;
+				display:block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 2%;
+			}
+			.btn {
+				text-align: center;
+				padding-bottom: 25px;
+			}
+			.border {
+				max-width: 67%;
+				margin-left: 16.5%;
+			}		
+		}
+		.minus {
+			margin-left: 45%;
+			width: 60px;
+		}
+		.minus:hover {
+			cursor: pointer;
+			cursor: hand;
+		}
+		h2 {
+			border-bottom: 3px solid white;
+			width: 89%;
+			margin-left: 2%;
+		}
+		.gendia{
+			width: 70%;
+			margin-top: -10%;
+		}
+		.no-border h2 {
+			border-bottom: none;
+		}	
+	 }
+	.work-image {
+		width:175px;	
+		margin-left: 5%;
+		.tax-free-image{
+			width:175px;				
+		}
+		.book-image {
+			width:140px;
+		}				
+	 }
+	.work-image:hover {
+		cursor: pointer;
+		cursor: hand;
+	}
+	 .plus {
+		width: 40px;
+		float: left;
+		padding-top: 10%;
+		padding-left: 40%;
+	 }
+	.plus:hover {
+		cursor: pointer;
+		cursor: hand;
+	}
+	@keyframes zRotate2 {
+		0%   {transform: rotateZ(0deg);}
+		25%   {transform: rotateZ(-25deg);}
+		50%   {transform: rotateZ(0deg);}
+		75%   {transform: rotateZ(25deg);}		
+		100%   {transform: rotateZ(0deg);}
+	 }	
+	.work-image:hover{
+			animation-name: zRotate2;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+	}
 @media only screen and (max-width: 900px) {
+	.head-text {
+		font-size: 2.5em;
+	}
+	.circle-bar {
+		width: 50px;
+		height: 50px;
+	}
+	.work-image {
+		padding-left: 18%;
+		padding-top: 25px;
+	}
+	.worksContainer {
+		.minus {
+			margin-left: 30%;
+		}
+	}
+	.work-image:hover {
+		animation: none;
+	}
 	.mastercontainer {
 		.gray-bar {
 			display: none;
@@ -209,82 +304,5 @@
 			font-size: 1em;
 		}
 	}
-}
-	 .worksContainer {
-		 //color:white;
-		 font-family: Gotham-Medium;
-		 padding-left: 10%;
-		 .worksdetails {
-			 padding-right: 100px;
-			 .line {
-				border-bottom: 3px solid white;
-				max-width: 80%;
-		 	}
-			.minus-border {
-				border-bottom: 3px solid white;
-				border-top: 3px solid white;
-			}
-			p {
-				padding-right: 25px;
-				padding-left: 25px;
-			}
-		 }
-		#minus {
-			margin-left: 45%;
-			width: 60px;
-		}
-		h2 {
-			border-bottom: 3px solid white;
-			width: 89%;
-			margin-left: 2%;
-		}
-		#gendia {
-			width: 70%;
-			margin-top: -10%;
-		}
-		#noborder h2 {
-			border-bottom: none;
-		}	
-	 }
-	.workimage {
-		width:175px;	
-		margin-left: 5%;
-		#taxfreeimage{
-			width:175px;				
-		}
-		#bookimage {
-			width:140px;
-		}				
-	 }
-	 .plus {
-		width: 40px;
-		float: left;
-		padding-top: 10%;
-		padding-left: 40%;
-	 }
-	 .plus-2 {
-		padding-top: 25%;
-		padding-left: 40%;
-	 }
-	 .plus-3 {
-		padding-top: 60%;
-		padding-left: 40%;
-	 }
-	 .plus-4 {
-		padding-top: 50%;
-		padding-left: 40%;
-	 }
-	@keyframes zRotate2 {
-		0%   {transform: rotateZ(0deg);}
-		25%   {transform: rotateZ(-25deg);}
-		50%   {transform: rotateZ(0deg);}
-		75%   {transform: rotateZ(25deg);}		
-		100%   {transform: rotateZ(0deg);}
-	 }	
-	.workimage:hover{
-			animation-name: zRotate2;
-			animation-duration: 1s;
-			animation-timing-function: linear;
-			animation-iteration-count: infinite;
 	}	 
 }

@@ -164,7 +164,7 @@
 				</div>
 			</div>
 			<br>
-			<div class="greenout">
+			<div class="green-out">
 				<br>
 				<br>
 				<div class="row">
@@ -218,14 +218,14 @@
 		<div plat-tap="togglePurchases()"><img plat-src="{{imgPurchasesUrl}}" class="plus"></div>
 	</div>
 	<div class="col-dsk-8">
-		<div class="workimage" id="carimage">
+		<div class="work-image car-image">
 			<img src="../images/icons/car icon.svg" plat-tap="togglePurchases()" alt="">
 		</div>
 	</div>
 </div>
 <div class="worksContainer" plat-visible="{{worksVisible}}">
 	<h2> Finance Purchases</h2>
-	<div id="purchases" class="worksdetails" plat-visible="{{purchasesVisible}}">
+	<div class="works-details" plat-visible="{{purchasesVisible}}">
 		<div class="row">
 			<div class="col-dsk-4 col-phn-12">
 				<p> Most people believe the best way to buy a car is with cash instead of borrowing the money. This way they don’t have to
@@ -320,25 +320,25 @@
 		<div class="row">
 			<div class="col-dsk-12 col-phn-12">
 				<div plat-tap="togglePurchases()" class="minus-border">
-					<p><img src="../images/icons/minus sign circle.svg" id="minus" alt=""></p>
+					<p><img src="../images/icons/minus sign circle.svg" class="minus" alt=""></p>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <div class="row" plat-visible="{{worksVisible}}">
-	<div class="col-dsk-1">
-		<div plat-tap="toggleIncome()"><img plat-src="{{imgIncomeUrl}}" class="plus plus-2"></div>
+	<div class="col-dsk-1 col-phn-12" >
+		<div plat-tap="toggleIncome()"><img plat-src="{{imgIncomeUrl}}" class="plus"></div>
 	</div>
 	<div class="col-dsk-8">
-		<div class="workimage" id="taxfreeimage">
+		<div class="work-image tax-free-image">
 			<img src="../images/icons/tax free retirement icon.svg" plat-tap="toggleIncome()" alt="">
 		</div>
 	</div>
 </div>
 <div class="worksContainer" plat-visible="{{worksVisible}}">
 	<h2>Tax-Free Retirement Income</h2>
-	<div id="income" class="worksdetails" plat-visible="{{incomeVisible}}">
+	<div class="works-details" plat-visible="{{incomeVisible}}">
 		<div class="row">
 			<div class="col-dsk-4 col-phn-12">
 				<p> Most people think life insurance is something that cost money. Did you know whole life insur- ance can generate millions
@@ -484,8 +484,8 @@
 		<br>
 		<div class="row">
 			<div class="col-dsk-12 col-phn-12">
-				<div plat-tap="toggleIncome()" class="minusborder">
-					<p><img src="../images/icons/minus sign circle.svg" id="minus" alt=""></p>
+				<div plat-tap="toggleIncome()" class="minus-border">
+					<p><img src="../images/icons/minus sign circle.svg" class="minus" alt=""></p>
 				</div>
 				<br>
 				<br>
@@ -498,10 +498,10 @@
 
 <div class="row" plat-visible="{{worksVisible}}">
 	<div class="col-dsk-1">
-		<div plat-tap="toggleWealth()"><img plat-src="{{imgWealthUrl}}" class="plus plus-3"></div>
+		<div plat-tap="toggleWealth()"><img plat-src="{{imgWealthUrl}}" class="plus"></div>
 	</div>
 	<div class="col-dsk-8">
-		<div class="workimage" id="generalimage">
+		<div class="work-image general-image">
 			<img src="../images/icons/generational wealth icon.svg" plat-tap="toggleWealth()" alt="">
 		</div>
 	</div>
@@ -509,7 +509,7 @@
 
 <div class="worksContainer" plat-visible="{{worksVisible}}">
 	<h2>Generational Wealth</h2>
-	<div id="wealth" class="worksdetails" plat-visible="{{wealthVisible}}">
+	<div class="works-details" plat-visible="{{wealthVisible}}">
 		<div class="row">
 			<div class="col-dsk-4 col-phn-12">
 				<p> What do you want to leave to the next generation? The best thing to leave the next generation is not just money but also
@@ -549,12 +549,12 @@
 		</div>
 		<div class="row">
 			<div class="col-dsk-12 col-phn-12">
-				<p><img src="../images/icons/Generational Wealth Steps Diagram White.svg" id="gendia" alt=""></p>
+				<p><img src="../images/icons/Generational Wealth Steps Diagram White.svg" class="gendia" alt=""></p>
 			</div>
 		</div>
-		<p id="asterisk">*As this proceeds, the death benefit from Generation 2 will go to Generation 4. The death benefit from Genera- tion 3 will
+		<p>*As this proceeds, the death benefit from Generation 2 will go to Generation 4. The death benefit from Genera- tion 3 will
 			go to Generation 5. Instilling these principals for generations to come is not easy but has been done.</p>
-		<div id="noborder">
+		<div class="no-border">
 			<h2>Vanderbilt v. Rothschild</h2>
 		</div>
 		<div class="row">
@@ -611,8 +611,8 @@
 		</div>
 		<div class="row">
 			<div class="col-dsk-12 col-phn-12">
-				<div plat-tap="toggleWealth()" class="minusborder">
-					<p><img src="../images/icons/minus sign circle.svg" id="minus" alt=""></p>
+				<div plat-tap="toggleWealth()" class="minus-border">
+					<p><img src="../images/icons/minus sign circle.svg" class="minus" alt=""></p>
 				</div>
 				<br>
 				<br>
@@ -628,10 +628,10 @@
 
 <div class="row" plat-visible="{{worksVisible}}">
 	<div class="col-dsk-1">
-		<div plat-tap="toggleFinancial()"><img plat-src="{{imgFinancialUrl}}" class="plus plus-4"></div>
+		<div plat-tap="toggleFinancial()"><img plat-src="{{imgFinancialUrl}}" class="plus"></div>
 	</div>
 	<div class="col-dsk-8">
-		<div class="workimage" id="bookimage">
+		<div class="work-image book-image">
 			<img src="../images/icons/Book icon.svg" plat-tap="toggleFinancial()" alt="">
 		</div>
 	</div>
@@ -639,8 +639,8 @@
 
 <div class="worksContainer" plat-visible="{{worksVisible}}">
 	<h2>INC Financial: Wealth...Create it. Grow it. Keep it.</h2>
-	<div id="financial" class="worksdetails" plat-visible="{{financialVisible}}">
-		<div class="greenout">
+	<div id="financial" class="works-details" plat-visible="{{financialVisible}}">
+		<div class="green-out">
 				<br>
 				<br>
 				<div class="row">
@@ -648,7 +648,7 @@
 						<p></p>
 					</div>
 					<div class="col-phn-8">
-						<div class="para">
+						<div>
 							<br>
 							<h3>INC Financial: Wealth...Create it. Grow it. Keep it</h3>
 							<h4>by: Josh Taylor</h4>
