@@ -1,11 +1,12 @@
 [plat-control="about-vc"] {
-	font-family: Gotham-Book;
 	color: white;
-	font-weight: 100;
+	.mastercontainer {
+		font-family: Gotham-Book;
+		font-weight: 100;
+	}
 		.head-text {
 			text-align: center;
-			font-size: 40px;
-			padding-right: 60px;
+			font-size: 3em;
 		}
 		.head-text:hover{
 			font-family: Gotham-Bold;
@@ -26,8 +27,8 @@
 			}	
 		}	
 		.circle-bar {
-			width: 11%;
-			height: 11%;
+			width: 60px;
+			height: 60px;
 			vertical-align: -20%;
 		}
 		.box {
@@ -35,56 +36,48 @@
 		}
 		.thick-white{
 			border-bottom: solid 4px white;
-			font-size: 28px;
+			font-size: 1.875em;
 			font-family: Gotham-Black;
-			font-weight: 100;
 			margin-left: 3%;		
 		}
 		.thin-white {
 			font-family: Gotham-Book;
-			font-weight: 100;
 		}
 		.white-bar {
 			width: 40px;
 			height: 40px;
 			float:right;
 		}
-		.testimonialswhite {
-			color: white;
-			font-size: 20px;
-			line-height: 30px;
+		.testimonials-white {
+			font-size: 1.5em;
+			line-height: 1.5em;
 			padding-left: 19%;
 			width: 65%;
 		}
 		.josh2 {
 			float:left;
-			padding-right: 55px;
+			padding-right: 5%;
 			padding-bottom: 23px;
-			width: 350px;	
+			width: 20em;	
 		}
-		.testimonialswhitefloat {
-			color: white;
-			font-size: 20px;
-			line-height: 30px;
-			padding-left: 19%;
+		.testimonials-white-float {
 			width: 65%;
 			clear:both;
 		}
-		.whiteout {
+		.white-out {
 			background-color: white;
 		}
-		.thickgrey {
+		.gray {
 			color: #758b97;
+		}
+		.thick-gray {
 			font-family: Gotham-Black;
-			font-weight: 100;
-			font-size: 28px;
+			font-size: 30px;
 			border-bottom: solid 4px #758b97;
 			margin-left: 3%;
 		}
-		.thingrey {
-			color: #758b97;
+		.thin-gray {
 			font-family: Gotham-Book;
-			font-weight: 100;
 		}
 		.gray-bar {
 			width: 40px;
@@ -93,49 +86,37 @@
 		}
 		.testimonials {
 			color: #758b97;
-			font-size: 20px;
-			line-height: 30px;
+			font-size: 1.5em;
+			line-height: 1.5em;
 			padding-left: 19%;
 			width: 65%;
 		}
 			.center {
-				color: white;
 				background-color: #7e8a7d;
 		}
-		.centerwhite {
-			color:white;
+		.center-white {
 			font-family: Gotham-Bold;
 			font-size: 36px;
 			margin: 0 auto;
 			margin-left: 3%; 
 		}
 		.intro {
-			color:white;
 			font-family: Gotham-Medium;
 			margin-left: 17%;
 			margin-right: 17%;
 			font-size: 40px;
-			p{
+			p {
 				margin-left: 3%;
 			}
 		}
-		.paranohover p {
+		.para {
 			color:#5a604b;
-			font-family: Gotham-Book;
 			font-weight: 500;
-				.boldtext {
-					font-family: Gotham-Bold;
-				}
+			.boldtext {
+				font-family: Gotham-Bold;
+			}
 		}
-		.para p {
-			color:#5a604b;
-			font-family: Gotham-Book;
-			font-weight: 500;
-				.boldtext {
-					font-family: Gotham-Bold;
-				}
-		}
-		.bookfloat {
+		.book-float {
 			width: 50px;
 			height: 50px;
 			float: right;
@@ -144,7 +125,6 @@
 		}
 		.greenout {
 			background-color: #7e8a7d;
-			color: white;
 			h3 {
 				font-family: Gotham-MediumItalic;
 				margin: 1px auto;
@@ -163,10 +143,7 @@
 				font-family: Gotham-Bold;
 				font-size: 50px;
 			}
-			.bookfloat {
-				margin-top: 4%;
-			}
-			.centerbook {
+			.center-book {
 				width: 100px;
 				height: 100px;
 				display:block;
@@ -184,27 +161,19 @@
 			}		
 		}
 	@keyframes zRotate2 {
-		0%   {transform: rotateZ(0deg);
-		}
-		25%   {transform: rotateZ(-25deg);
-		}
-		50%   {transform: rotateZ(0deg);
-		}
-		75%   {transform: rotateZ(25deg);
-		}		
-		100%   {transform: rotateZ(0deg);
-		}
+		0%   {transform: rotateZ(0deg);}
+		25%   {transform: rotateZ(-25deg);}
+		50%   {transform: rotateZ(0deg);}
+		75%   {transform: rotateZ(25deg);}		
+		100%   {transform: rotateZ(0deg);}
 	 }
 	@keyframes zenlarge {
-		0%   {transform:  scale3d(1,1,1);
-		}
-		10%   {transform:  scale3d(1.1,1.1,1.1);
-		}
-		100%   {transform:  scale3d(1,1,1);
-		}
+		0%   {transform:  scale3d(1,1,1);}
+		10%   {transform:  scale3d(1.1,1.1,1.1);}
+		100%   {transform:  scale3d(1,1,1);}
 	}
 	.container:hover{	
-		.bookfloat, .centerbook {
+		.book-float, .center-book {
 			animation-name: zRotate2;
 			animation-duration: 1s;
 			animation-timing-function: linear;
@@ -217,8 +186,32 @@
 			animation-iteration-count: infinite;
 		}
 	}
+@media only screen and (max-width: 900px) {
+	.mastercontainer {
+		.gray-bar {
+			display: none;
+		}
+		.white-bar {
+			display: none;
+		}
+		.slash {
+			display: none;
+		}
+		.josh2 {
+			float:none;
+			padding-bottom: 20px;
+			width: 10em;
+		}
+		.testimonials {
+			font-size: 1em;
+		}
+		.testimonials-white {
+			font-size: 1em;
+		}
+	}
+}
 	 .worksContainer {
-		 color:white;
+		 //color:white;
 		 font-family: Gotham-Medium;
 		 padding-left: 10%;
 		 .worksdetails {
@@ -227,7 +220,7 @@
 				border-bottom: 3px solid white;
 				max-width: 80%;
 		 	}
-			.minusborder {
+			.minus-border {
 				border-bottom: 3px solid white;
 				border-top: 3px solid white;
 			}
@@ -251,10 +244,8 @@
 		}
 		#noborder h2 {
 			border-bottom: none;
-		}
-	
+		}	
 	 }
-
 	.workimage {
 		width:175px;	
 		margin-left: 5%;
@@ -263,713 +254,37 @@
 		}
 		#bookimage {
 			width:140px;
-		}
-					
+		}				
 	 }
-	 #plus {
+	 .plus {
 		width: 40px;
 		float: left;
 		padding-top: 10%;
 		padding-left: 40%;
 	 }
-	 #plus2 {
-		width: 40px;
-		float: left;
+	 .plus-2 {
 		padding-top: 25%;
 		padding-left: 40%;
 	 }
-	 #plus3 {
-		width: 40px;
-		float: left;
+	 .plus-3 {
 		padding-top: 60%;
 		padding-left: 40%;
 	 }
-	 #plus4 {
-		width: 40px;
-		float: left;
+	 .plus-4 {
 		padding-top: 50%;
 		padding-left: 40%;
 	 }
 	@keyframes zRotate2 {
-		0%   {transform: rotateZ(0deg);
-		}
-		25%   {transform: rotateZ(-25deg);
-		}
-		50%   {transform: rotateZ(0deg);
-		}
-		75%   {transform: rotateZ(25deg);
-		}		
-		100%   {transform: rotateZ(0deg);
-		}
+		0%   {transform: rotateZ(0deg);}
+		25%   {transform: rotateZ(-25deg);}
+		50%   {transform: rotateZ(0deg);}
+		75%   {transform: rotateZ(25deg);}		
+		100%   {transform: rotateZ(0deg);}
 	 }	
 	.workimage:hover{
 			animation-name: zRotate2;
 			animation-duration: 1s;
 			animation-timing-function: linear;
 			animation-iteration-count: infinite;
-		
 	}	 
-	
-// ---------------Media Query iPhone 4/5----------------------------------
-// 	@media only screen and (max-width: 500px) {
-// 		.headtext {
-// 			font-family: Gotham-Book;
-// 			text-align: center;
-// 			font-size: 26px;
-// 			font-weight: 100;
-// 			padding-right: 60px;
-// 			color: white;
-// 		}
-// 		.headtext:hover{
-// 			font-family: Gotham-Bold;
-// 			text-decoration: underline;
-// 			#imagetwo {
-// 				background-color: rgba(255,255,255,0.5);
-// 				border-radius: 50%;
-// 			}
-// 		}
-// 		.activeteam {
-// 			font-family: Gotham-Bold;
-// 			text-decoration: underline;
-// 			color:white;
-// 			#imagetwo {
-// 				background-color: rgba(255,255,255,0.5);
-// 				border-radius: 50%;
-// 			}	
-// 		}	
-
-// 		#imageone {
-// 			width: 10%;
-// 			height: 10%;
-// 			vertical-align: -25%;
-// 		}
-// 		#imagetwo {
-// 			width: 11%;
-// 			height: 11%;
-// 			vertical-align: -20%;
-// 		}
-// 		.box {
-// 			clear: both;
-// 		}
-// 		.thickwhite{
-// 			color: white;
-// 			border-bottom: solid 4px white;
-// 			font-size: 18px;
-// 			font-family: Gotham-Black;
-// 			font-weight: 100;
-// 			margin-left: 3%;
-		
-// 		}
-// 		.thinwhite {
-// 			color: white;
-// 			font-family: Gotham-Book;
-// 			font-weight: 100;
-// 		}
-// 		#whitebar {
-// 			width: 20px;
-// 			height: 20px;
-// 			float:right;
-// 		}
-// 		.testimonialswhite {
-// 			color: white;
-// 			font-size: 14px;
-// 			line-height: 18px;
-// 			padding-left: 19%;
-// 			width: 65%;
-// 		}
-// 		.josh2 {
-// 			float:left;
-// 			padding-right: 55px;
-// 			padding-bottom: 23px;
-// 			width: 180px;	
-// 		}
-// 		.testimonialswhitefloat {
-// 			color: white;
-// 			font-size: 14px;
-// 			line-height: 18px;
-// 			padding-left: 19%;
-// 			width: 65%;
-// 			clear:both;
-// 		}
-// 		.whiteout {
-// 			background-color: white;
-// 		}
-// 		.thickgrey {
-// 			color: #758b97;
-// 			font-family: Gotham-Black;
-// 			font-weight: 100;
-// 			font-size: 14px;
-// 			border-bottom: solid 4px #758b97;
-// 			margin-left: 3%;
-// 		}
-// 		.thingrey {
-// 			color: #758b97;
-// 			font-family: Gotham-Book;
-// 			font-weight: 100;
-// 		}
-// 		#graybar {
-// 			width: 18px;
-// 			height: 18px;
-// 			float:right;	
-// 		}
-// 		.testimonials {
-// 			color: #758b97;
-// 			font-size: 14px;
-// 			line-height: 18px;
-// 			padding-left: 19%;
-// 			width: 65%;
-// 		}
-// 			.center {
-// 				color: white;
-// 				background-color: #7e8a7d;
-// 		}
-// 		.centerwhite {
-// 			color:white;
-// 			font-family: Gotham-Bold;
-// 			font-size: 20px;
-// 			margin: 0 auto;
-// 			margin-left: 3%; 
-// 			padding-top: 20px;
-// 		}
-// 		.intro {
-// 			color:white;
-// 			font-family: Gotham-Medium;
-// 			margin-left: 17%;
-// 			margin-right: 17%;
-// 			font-size: 40px;
-// 			p{
-// 				margin-left: 3%;
-// 				font-size: 14px;
-// 				line-height: 18px;
-// 			}
-// 		}
-// 		.paranohover p {
-// 			color:#5a604b;
-// 			font-family: Gotham-Book;
-// 			font-weight: 500;
-// 			font-size: 14px;
-// 			line-height: 18px;
-// 				.boldtext {
-// 					font-family: Gotham-Bold;
-// 				}
-// 		}
-// 		.para p {
-// 			color:#5a604b;
-// 			font-family: Gotham-Book;
-// 			font-size: 14px;
-// 			line-height: 18px;
-// 			font-weight: 500;
-// 				.boldtext {
-// 					font-family: Gotham-Bold;
-// 				}
-// 		}
-// 		.bookfloat {
-// 			width: 50px;
-// 			height: 50px;
-// 			float: right;
-// 			margin-top: 15%;
-// 			margin-right: 5%;
-// 		}
-// 		.greenout {
-// 			background-color: #7e8a7d;
-// 			color: white;
-// 			h3 {
-// 				font-family: Gotham-MediumItalic;
-// 				margin: 1px auto;
-// 				line-height: 25px;
-// 			}
-// 			h4 {
-// 				margin: 0 auto;
-// 			}
-// 			p {
-// 				color:white;
-// 				font-family: Gotham-Book;
-// 				font-weight: 500;
-// 			}
-// 			h2{
-// 				margin: 0 auto;
-// 				font-family: Gotham-Bold;
-// 				font-size: 50px;
-// 			}
-// 			.bookfloat {
-// 				margin-top: 4%;
-// 			}
-// 			.centerbook {
-// 				width: 100px;
-// 				height: 100px;
-// 				display:block;
-// 				margin-left: auto;
-// 				margin-right: auto;
-// 				margin-top: 2%;
-// 			}
-// 			.btn {
-// 				text-align: center;
-// 				padding-bottom: 25px;
-// 			}
-// 			.border {
-// 				max-width: 67%;
-// 				margin-left: 16.5%;
-// 			}		
-// 		}
-// 	@keyframes zRotate2 {
-// 		0%   {transform: rotateZ(0deg);
-// 		}
-// 		25%   {transform: rotateZ(-25deg);
-// 		}
-// 		50%   {transform: rotateZ(0deg);
-// 		}
-// 		75%   {transform: rotateZ(25deg);
-// 		}		
-// 		100%   {transform: rotateZ(0deg);
-// 		}
-// 	 }
-// 	@keyframes zenlarge {
-// 		0%   {transform:  scale3d(1,1,1);
-// 		}
-// 		10%   {transform:  scale3d(1.1,1.1,1.1);
-// 		}
-// 		100%   {transform:  scale3d(1,1,1);
-// 		}
-// 	}
-// 	.container:hover{	
-// 		.bookfloat, .centerbook {
-// 			animation-name: zRotate2;
-// 			animation-duration: 1s;
-// 			animation-timing-function: linear;
-// 			animation-iteration-count: infinite;
-// 		}
-// 		.btn {
-// 			animation-name: zenlarge;
-// 			animation-duration: 1s;
-// 			animation-timing-function: linear;			
-// 			animation-iteration-count: infinite;
-// 		}
-// 	}
-// 	 .worksContainer {
-// 		 color:white;
-// 		 font-family: Gotham-Medium;
-// 		 padding-left: 10%;
-// 		 .worksdetails {
-// 			 padding-right: 100px;
-// 			 .line {
-// 				border-bottom: 3px solid white;
-// 				max-width: 80%;
-// 		 	}
-// 			.minusborder {
-// 				border-bottom: 3px solid white;
-// 				border-top: 3px solid white;
-// 			}
-// 			p {
-// 				padding-right: 25px;
-// 				padding-left: 25px;
-// 			}
-// 		 }
-// 		#minus {
-// 			margin-left: 45%;
-// 			width: 60px;
-// 		}
-// 		h2 {
-// 			border-bottom: 3px solid white;
-// 			width: 89%;
-// 			margin-left: 2%;
-// 		}
-// 		#gendia {
-// 			width: 70%;
-// 			margin-top: -10%;
-// 		}
-// 		#noborder h2 {
-// 			border-bottom: none;
-// 		}
-	
-// 	 }
-
-// 	.workimage {
-// 		width:175px;	
-// 		margin-left: 5%;
-// 		#taxfreeimage{
-// 			width:175px;				
-// 		}
-// 		#bookimage {
-// 			width:140px;
-// 		}
-					
-// 	 }
-// 	 #plus {
-// 		width: 40px;
-// 		float: left;
-// 		padding-top: 10%;
-// 		padding-left: 40%;
-// 	 }
-// 	 #plus2 {
-// 		width: 40px;
-// 		float: left;
-// 		padding-top: 25%;
-// 		padding-left: 40%;
-// 	 }
-// 	 #plus3 {
-// 		width: 40px;
-// 		float: left;
-// 		padding-top: 60%;
-// 		padding-left: 40%;
-// 	 }
-// 	 #plus4 {
-// 		width: 40px;
-// 		float: left;
-// 		padding-top: 50%;
-// 		padding-left: 40%;
-// 	 }
-// 	@keyframes zRotate2 {
-// 		0%   {transform: rotateZ(0deg);
-// 		}
-// 		25%   {transform: rotateZ(-25deg);
-// 		}
-// 		50%   {transform: rotateZ(0deg);
-// 		}
-// 		75%   {transform: rotateZ(25deg);
-// 		}		
-// 		100%   {transform: rotateZ(0deg);
-// 		}
-// 	 }	
-// 	.workimage:hover{
-// 			animation-name: zRotate2;
-// 			animation-duration: 1s;
-// 			animation-timing-function: linear;
-// 			animation-iteration-count: infinite;
-		
-// 	}
-		
-// 	}
-	
-// // --------------- Media Query iPhone 6 / Samsung ----------------------------------
-// 	@media only screen 
-// 	and (min-device-width: 360px) 
-// 	and (max-device-width: 667px) 
-// 	and (-webkit-min-device-pixel-ratio: 2) {
-// 		.headtext {
-// 			font-family: Gotham-Book;
-// 			text-align: center;
-// 			font-size: 26px;
-// 			font-weight: 100;
-// 			padding-right: 60px;
-// 			color: white;
-// 		}
-// 		.headtext:hover{
-// 			font-family: Gotham-Bold;
-// 			text-decoration: underline;
-// 			#imagetwo {
-// 				background-color: rgba(255,255,255,0.5);
-// 				border-radius: 50%;
-// 			}
-// 		}
-// 		.activeteam {
-// 			font-family: Gotham-Bold;
-// 			text-decoration: underline;
-// 			color:white;
-// 			#imagetwo {
-// 				background-color: rgba(255,255,255,0.5);
-// 				border-radius: 50%;
-// 			}	
-// 		}	
-
-// 		#imageone {
-// 			width: 10%;
-// 			height: 10%;
-// 			vertical-align: -25%;
-// 		}
-// 		#imagetwo {
-// 			width: 11%;
-// 			height: 11%;
-// 			vertical-align: -20%;
-// 		}
-// 		.box {
-// 			clear: both;
-// 		}
-// 		.thickwhite{
-// 			color: white;
-// 			border-bottom: solid 4px white;
-// 			font-size: 18px;
-// 			font-family: Gotham-Black;
-// 			font-weight: 100;
-// 			margin-left: 3%;
-		
-// 		}
-// 		.thinwhite {
-// 			color: white;
-// 			font-family: Gotham-Book;
-// 			font-weight: 100;
-// 		}
-// 		#whitebar {
-// 			width: 20px;
-// 			height: 20px;
-// 			float:right;
-// 		}
-// 		.testimonialswhite {
-// 			color: white;
-// 			font-size: 16px;
-// 			line-height: 18px;
-// 			padding-left: 19%;
-// 			width: 65%;
-// 		}
-// 		.josh2 {
-// 			float:left;
-// 			padding-right: 55px;
-// 			padding-bottom: 23px;
-// 			width: 210px;	
-// 		}
-// 		.testimonialswhitefloat {
-// 			color: white;
-// 			font-size: 14px;
-// 			line-height: 18px;
-// 			padding-left: 19%;
-// 			width: 65%;
-// 			clear:both;
-// 		}
-// 		.whiteout {
-// 			background-color: white;
-// 		}
-// 		.thickgrey {
-// 			color: #758b97;
-// 			font-family: Gotham-Black;
-// 			font-weight: 100;
-// 			font-size: 16px;
-// 			border-bottom: solid 4px #758b97;
-// 			margin-left: 3%;
-// 		}
-// 		.thingrey {
-// 			color: #758b97;
-// 			font-family: Gotham-Book;
-// 			font-weight: 100;
-// 		}
-// 		#graybar {
-// 			width: 20px;
-// 			height: 20px;
-// 			float:right;	
-// 		}
-// 		.testimonials {
-// 			color: #758b97;
-// 			font-size: 16px;
-// 			line-height: 18px;
-// 			padding-left: 19%;
-// 			width: 65%;
-// 		}
-// 			.center {
-// 				color: white;
-// 				background-color: #7e8a7d;
-// 		}
-// 		.centerwhite {
-// 			color:white;
-// 			font-family: Gotham-Bold;
-// 			font-size: 20px;
-// 			margin: 0 auto;
-// 			margin-left: 3%; 
-// 			padding-top: 20px;
-// 		}
-// 		.intro {
-// 			color:white;
-// 			font-family: Gotham-Medium;
-// 			margin-left: 17%;
-// 			margin-right: 17%;
-// 			font-size: 40px;
-// 			p{
-// 				margin-left: 3%;
-// 				font-size: 14px;
-// 				line-height: 18px;
-// 			}
-// 		}
-// 		.paranohover p {
-// 			color:#5a604b;
-// 			font-family: Gotham-Book;
-// 			font-weight: 500;
-// 			font-size: 14px;
-// 			line-height: 18px;
-// 				.boldtext {
-// 					font-family: Gotham-Bold;
-// 				}
-// 		}
-// 		.para p {
-// 			color:#5a604b;
-// 			font-family: Gotham-Book;
-// 			font-size: 14px;
-// 			line-height: 18px;
-// 			font-weight: 500;
-// 				.boldtext {
-// 					font-family: Gotham-Bold;
-// 				}
-// 		}
-// 		.bookfloat {
-// 			width: 50px;
-// 			height: 50px;
-// 			float: right;
-// 			margin-top: 15%;
-// 			margin-right: 5%;
-// 		}
-// 		.greenout {
-// 			background-color: #7e8a7d;
-// 			color: white;
-// 			h3 {
-// 				font-family: Gotham-MediumItalic;
-// 				margin: 1px auto;
-// 				line-height: 25px;
-// 			}
-// 			h4 {
-// 				margin: 0 auto;
-// 			}
-// 			p {
-// 				color:white;
-// 				font-family: Gotham-Book;
-// 				font-weight: 500;
-// 			}
-// 			h2{
-// 				margin: 0 auto;
-// 				font-family: Gotham-Bold;
-// 				font-size: 50px;
-// 			}
-// 			.bookfloat {
-// 				margin-top: 4%;
-// 			}
-// 			.centerbook {
-// 				width: 100px;
-// 				height: 100px;
-// 				display:block;
-// 				margin-left: auto;
-// 				margin-right: auto;
-// 				margin-top: 2%;
-// 			}
-// 			.btn {
-// 				text-align: center;
-// 				padding-bottom: 25px;
-// 			}
-// 			.border {
-// 				max-width: 67%;
-// 				margin-left: 16.5%;
-// 			}		
-// 		}
-// 	@keyframes zRotate2 {
-// 		0%   {transform: rotateZ(0deg);
-// 		}
-// 		25%   {transform: rotateZ(-25deg);
-// 		}
-// 		50%   {transform: rotateZ(0deg);
-// 		}
-// 		75%   {transform: rotateZ(25deg);
-// 		}		
-// 		100%   {transform: rotateZ(0deg);
-// 		}
-// 	 }
-// 	@keyframes zenlarge {
-// 		0%   {transform:  scale3d(1,1,1);
-// 		}
-// 		10%   {transform:  scale3d(1.1,1.1,1.1);
-// 		}
-// 		100%   {transform:  scale3d(1,1,1);
-// 		}
-// 	}
-// 	.container:hover{	
-// 		.bookfloat, .centerbook {
-// 			animation-name: zRotate2;
-// 			animation-duration: 1s;
-// 			animation-timing-function: linear;
-// 			animation-iteration-count: infinite;
-// 		}
-// 		.btn {
-// 			animation-name: zenlarge;
-// 			animation-duration: 1s;
-// 			animation-timing-function: linear;			
-// 			animation-iteration-count: infinite;
-// 		}
-// 	}
-// 	 .worksContainer {
-// 		 color:white;
-// 		 font-family: Gotham-Medium;
-// 		 padding-left: 10%;
-// 		 .worksdetails {
-// 			 padding-right: 100px;
-// 			 .line {
-// 				border-bottom: 3px solid white;
-// 				max-width: 80%;
-// 		 	}
-// 			.minusborder {
-// 				border-bottom: 3px solid white;
-// 				border-top: 3px solid white;
-// 			}
-// 			p {
-// 				padding-right: 25px;
-// 				padding-left: 25px;
-// 			}
-// 		 }
-// 		#minus {
-// 			margin-left: 50%;
-// 			width: 60px;
-// 		}
-// 		h2 {
-// 			border-bottom: 3px solid white;
-// 			width: 89%;
-// 			margin-left: 2%;
-// 		}
-// 		#gendia {
-// 			width: 70%;
-// 			margin-top: -10%;
-// 		}
-// 		#noborder h2 {
-// 			border-bottom: none;
-// 		}
-	
-// 	 }
-
-// 	.workimage {
-// 		width:175px;	
-// 		margin-left: 5%;
-// 		#taxfreeimage{
-// 			width:175px;				
-// 		}
-// 		#bookimage {
-// 			width:140px;
-// 		}
-					
-// 	 }
-// 	 #plus {
-// 		width: 40px;
-// 		float: left;
-// 		padding-top: 10%;
-// 		padding-left: 40%;
-// 	 }
-// 	 #plus2 {
-// 		width: 40px;
-// 		float: left;
-// 		padding-top: 25%;
-// 		padding-left: 40%;
-// 	 }
-// 	 #plus3 {
-// 		width: 40px;
-// 		float: left;
-// 		padding-top: 60%;
-// 		padding-left: 40%;
-// 	 }
-// 	 #plus4 {
-// 		width: 40px;
-// 		float: left;
-// 		padding-top: 50%;
-// 		padding-left: 40%;
-// 	 }
-// 	@keyframes zRotate2 {
-// 		0%   {transform: rotateZ(0deg);
-// 		}
-// 		25%   {transform: rotateZ(-25deg);
-// 		}
-// 		50%   {transform: rotateZ(0deg);
-// 		}
-// 		75%   {transform: rotateZ(25deg);
-// 		}		
-// 		100%   {transform: rotateZ(0deg);
-// 		}
-// 	 }	
-// 	.workimage:hover{
-// 			animation-name: zRotate2;
-// 			animation-duration: 1s;
-// 			animation-timing-function: linear;
-// 			animation-iteration-count: infinite;
-		
-// 	}
-		
-// 	}
 }
